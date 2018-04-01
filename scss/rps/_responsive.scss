@@ -1,19 +1,22 @@
 @media only screen and (max-width: 992px) { 
-	.center-992 {
-		text-align: center;
-	}
+	.text-align-md-right { text-align: right; }
+	.text-align-md-left { text-align: left; }
+	.text-align-md-center { text-align: center; }
+	.text-align-md-inherit { text-align: inherit; }
 }
 
 @media only screen and (max-width: 768px) {
-	.center-768 {
-		text-align: center;
-	}
+	.text-align-sm-right { text-align: right; }
+	.text-align-sm-left { text-align: left; }
+	.text-align-sm-center { text-align: center; }
+	.text-align-sm-inherit { text-align: inherit; }
 }
 
 @media only screen and (max-width: 480px) { 
-	.center-480 {
-		text-align: center;
-	}
+	.text-align-xs-right { text-align: right; }
+	.text-align-xs-left { text-align: left; }
+	.text-align-xs-center { text-align: center; }
+	.text-align-xs-inherit { text-align: inherit; }
 }
 
 @media only screen and (max-width: 320px) { 

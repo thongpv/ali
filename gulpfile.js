@@ -23,34 +23,30 @@ gulp.task('serve', ['sass'], function () {
         }
     });
     gulp.watch(['*.html'], reload);
-    gulp.watch(['js/*.js'], reload);
-    gulp.watch(['css/*.css'], reload);
-    gulp.watch("scss/*.scss", ['sass'], reload);
-    gulp.watch("scss/*/*.scss", ['sass'], reload);
-    gulp.watch("scss/*/*/*.scss", ['sass'], reload);
-    gulp.watch("scss/*/*/*/*.scss", ['sass'], reload);
-    gulp.watch("scss/*/*/*/*/*.scss", ['sass'], reload);
+    gulp.watch(['js/**'], reload);
+    gulp.watch(['css/**'], reload);
+    gulp.watch("scss/**", ['sass'], reload);
 });
 
 gulp.task('compress', function() {
-  gulp.src('js/*.js')
+  gulp.src('js/**')
     .pipe(minify({
         exclude: ['tasks'],
         ignoreFiles: ['-min.js']
     }))
     .pipe(gulp.dest('dist/js'));
 
-  gulp.src('css/*.css')
+  gulp.src('css/**')
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(gulp.dest('dist/css'));
 
-  // gulp.src('img/*')
-  //   .pipe(imagemin({
-  //       progressive: true,
-  //       svgoPlugins: [{removeViewBox: false}],
-  //       use: [pngquant()]
-  //   }))
-  //   .pipe(gulp.dest('dist/images'));
+  gulp.src('images/**')
+    .pipe(imagemin({
+        progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        use: [pngquant()]
+    }))
+    .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('default', ['serve']);
