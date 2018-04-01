@@ -1,0 +1,7 @@
+#menu {
+	@include opacity(0);
+
+	&.mm-opened {
+		@include opacity(1);
+	}
+}

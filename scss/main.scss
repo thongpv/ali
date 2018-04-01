@@ -1,0 +1,33 @@
+/* 
+	Project name
+	Author: Thong Pham
+	Version: 0.0.1
+*/ 
+
+/* BASE - Base styles, variable, mixins, etc */
+@import 'base/_fonts.scss';
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_normalize.scss';
+@import 'base/_base.scss';
+@import 'base/_keyframes.scss';
+@import 'eff/hover-master/hover.scss';
+
+/* MODULES - Individual site components */
+@import 'modules/_typography.scss';
+@import 'modules/_blocks.scss';
+@import 'modules/_button.scss';
+@import 'modules/_components.scss';
+@import 'modules/_sections.scss';
+
+/* PAGES - styles */
+@import 'pages/_contact.scss';
+@import 'pages/_home.scss';
+
+/* LAYOUTS - styles */
+@import 'layouts/_nav.scss';
+@import 'layouts/_header.scss';
+@import 'layouts/_footer.scss';
+
+/* RESPONSIVE - Page layout styles mobile */
+@import 'rps/_responsive.scss';
