@@ -6,13 +6,15 @@ var minifyCss   = require('gulp-minify-css');
 var imagemin    = require('gulp-imagemin');
 var pngquant    = require('imagemin-pngquant');
 var sass        = require('gulp-sass');
+var plumber     = require('gulp-plumber');
 
 // Values: nested, expanded, compact, compressed
 gulp.task('sass', function(){
   return gulp.src('scss/*.scss')
-    .pipe(sass({outputStyle: 'expanded'})) // Using gulp-sass
-    .pipe(gulp.dest('css'))
-    .pipe(browserSync.stream());
+             .pipe(plumber())
+             .pipe(sass({outputStyle: 'expanded'})) // Using gulp-sass
+             .pipe(gulp.dest('css'))
+             .pipe(browserSync.stream());
 });
 
 gulp.task('serve', ['sass'], function () {
