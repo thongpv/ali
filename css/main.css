@@ -73,6 +73,14 @@
   max-height: 100% !important;
 }
 
+.w-100 {
+  width: 100% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
 .text-justify {
   text-align: justify !important;
 }
@@ -321,6 +329,22 @@
   margin-bottom: 15px !important;
 }
 
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-left {
+  display: block;
+  margin-right: auto;
+}
+
+.img-right {
+  display: block;
+  margin-left: auto;
+}
+
 /* BASE - Base styles, variable, mixins, etc */
 @font-face {
   font-family: 'NotoSansRegular';
@@ -381,7 +405,7 @@
 }
 
 body {
-  background: #000asd;
+  background: #000;
 }
 
 /* PAGES - styles */
@@ -399,6 +423,24 @@ body {
 }
 
 /* RESPONSIVE - Page layout styles mobile */
+@media only screen and (max-width: 1200px) {
+  .text-align-lg-right {
+    text-align: right;
+  }
+  .text-align-lg-left {
+    text-align: left;
+  }
+  .text-align-lg-center {
+    text-align: center;
+  }
+  .text-align-lg-inherit {
+    text-align: inherit;
+  }
+  .hidden-lg-down {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .text-align-md-right {
     text-align: right;
@@ -411,6 +453,9 @@ body {
   }
   .text-align-md-inherit {
     text-align: inherit;
+  }
+  .hidden-md-down {
+    display: none;
   }
 }
 
@@ -427,9 +472,12 @@ body {
   .text-align-sm-inherit {
     text-align: inherit;
   }
+  .hidden-sm-down {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 544px) {
   .text-align-xs-right {
     text-align: right;
   }
@@ -441,5 +489,32 @@ body {
   }
   .text-align-xs-inherit {
     text-align: inherit;
+  }
+  .hidden-xs-down {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 544px) {
+  .hidden-md-up {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hidden-md-up {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hidden-md-up {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hidden-lg-up {
+    display: none;
   }
 }

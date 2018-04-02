@@ -13,11 +13,14 @@ gulp.task('sass', function(){
   return gulp.src('scss/*.scss')
              .pipe(plumber())
              .pipe(sass({outputStyle: 'expanded'})) // Using gulp-sass
-             .pipe(gulp.dest('css'))
-             .pipe(browserSync.stream());
+             .on('error', function (err) {
+                  console.log(err.toString());
+                  this.emit('end');
+              })
+             .pipe(gulp.dest('css'));
 });
 
-gulp.task('serve', ['sass'], function () {
+gulp.task('watch', ['sass'], function () {
     browserSync({
         notify: true,
         server: {
