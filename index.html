@@ -82,33 +82,99 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body class="dark-theme">
-    <div class="wrapper">
-        <!-- HEADER -->
-        <header class="main-header position-relative">
-            <a href="#" class="logo">
-                <span class="logo-mini"><b>A</b>LI</span>
-                <span class="logo-lg"><b>Admin</b>ALI</span>
-            </a>
-
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">
-                            <img alt="Brand" src="...">
-                        </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- List Item -->
+                <div class="panel panel-default mar-15">
+                    <div class="panel-body">
+                        <ol>
+                            <li><a href="#elButton">Button</a></li>
+                            <li>
+                                <a href="#elForm">Form</a>
+                                <ul>
+                                    <li><a href="#elCheckbox">Checkbox</a></li>
+                                    <li><a href="#elRadio">Radio</a></li>
+                                    <li><a href="#elSwitch">Switch</a></li>
+                                </ul>
+                            </li>
+                        </ol>
                     </div>
                 </div>
-            </nav>
-            <button class="btn btn-default mar-15 font-weight-bold font-italic text-uppercase">Hello</button>
-            <button class="btn btn-primary mar-15 font-weight-bold">Hello</button>
-        </header>
-        <!-- END: HEADER -->
+                <!-- END:List Item -->
 
-        <!-- FOOTER -->
-        <footer class="footer"></footer>
-        <!-- END: FOOTER -->
+                <h4 id="elButton"># Button</h4>
+                <button class="btn btn-default">Default</button>
+                <button class="btn btn-primary">Primary</button>
+                
+                <div class="clearfix"><br></div>
+                <h4 id="elForm"># Form</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 id="elCheckbox">Checkbox</h5>
+                        <label class="wrap-custom-box"> One
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark-ckb"></span>
+                        </label>
 
-        <a href="#" id="back_to_top" class="btn btn-outline-secondary" title="Back to top">&uarr;</a>
+                        <label class="wrap-custom-box"> Two
+                            <input type="checkbox"> 
+                            <span class="checkmark-ckb"></span>
+                        </label>
+
+                        <label class="wrap-custom-box"> Three
+                            <input type="checkbox" disabled="disabled">
+                            <span class="checkmark-ckb"></span>
+                        </label>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 id="elRadio">Radio</h5>
+                        <label class="wrap-custom-box"> One
+                            <input name="radio" type="radio" checked="checked">
+                            <span class="checkmark-rdb"></span>
+                        </label>
+
+                        <label class="wrap-custom-box"> Two
+                            <input name="radio" type="radio">
+                            <span class="checkmark-rdb"></span>
+                        </label>
+
+                        <label class="wrap-custom-box"> Three
+                            <input name="radio" type="radio" disabled="disabled">
+                            <span class="checkmark-rdb"></span>
+                        </label>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 id="elSwitch">Switch</h5>
+                        <label class="wrap-switch-text">
+                            <label class="wrap-switch"> 
+                                <input type="checkbox" class="switch-input" checked="checked">
+                                <span class="switch-label" data-on="On" data-off="Off"></span> 
+                                <span class="switch-handle"></span>
+                            </label>
+                            Choosen 
+                        </label>
+
+                        
+                        <br>
+                        <label class="wrap-switch"> 
+                            <input type="checkbox" class="switch-input">
+                            <span class="switch-label" data-on="On" data-off="Off"></span> 
+                            <span class="switch-handle"></span>
+                        </label>
+                        
+                        <br>
+                        <label class="wrap-switch"> 
+                            <input type="checkbox" class="switch-input" disabled="disabled">
+                            <span class="switch-label" data-on="On" data-off="Off"></span> 
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="js/jquery-3.3.1.min.js"></script>

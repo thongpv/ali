@@ -1,6 +1,7 @@
 .dark-theme {
 	.btn {
 		outline: none !important;
+		margin: 3px;
 		@include transition(.15s);
 		@include border-radius(4px);
 	}
