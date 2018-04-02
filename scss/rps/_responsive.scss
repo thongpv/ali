@@ -1,32 +1,32 @@
 @media only screen and (max-width: 1200px) { 
-	.text-align-lg-right { text-align: right; }
-	.text-align-lg-left { text-align: left; }
-	.text-align-lg-center { text-align: center; }
-	.text-align-lg-inherit { text-align: inherit; }
+	.text-align-lg-r { text-align: right; }
+	.text-align-lg-l { text-align: left; }
+	.text-align-lg-c { text-align: center; }
+	.text-align-lg- { text-align: inherit; }
 	.hidden-lg-down {display: none;}
 }
 
 @media only screen and (max-width: 992px) { 
-	.text-align-md-right { text-align: right; }
-	.text-align-md-left { text-align: left; }
-	.text-align-md-center { text-align: center; }
-	.text-align-md-inherit { text-align: inherit; }
+	.text-align-md-r { text-align: right; }
+	.text-align-md-l { text-align: left; }
+	.text-align-md-c { text-align: center; }
+	.text-align-md- { text-align: inherit; }
 	.hidden-md-down {display: none;}
 }
 
 @media only screen and (max-width: 768px) {
-	.text-align-sm-right { text-align: right; }
-	.text-align-sm-left { text-align: left; }
-	.text-align-sm-center { text-align: center; }
-	.text-align-sm-inherit { text-align: inherit; }
+	.text-align-sm-r { text-align: right; }
+	.text-align-sm-l { text-align: left; }
+	.text-align-sm-c { text-align: center; }
+	.text-align-sm- { text-align: inherit; }
 	.hidden-sm-down {display: none;}
 }
 
 @media only screen and (max-width: 544px) { 
-	.text-align-xs-right { text-align: right; }
-	.text-align-xs-left { text-align: left; }
-	.text-align-xs-center { text-align: center; }
-	.text-align-xs-inherit { text-align: inherit; }
+	.text-align-xs-r { text-align: right; }
+	.text-align-xs-l { text-align: left; }
+	.text-align-xs-c { text-align: center; }
+	.text-align-xs- { text-align: inherit; }
 	.hidden-xs-down {display: none;}
 }
 
