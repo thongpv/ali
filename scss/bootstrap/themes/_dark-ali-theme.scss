@@ -1,5 +1,16 @@
 @import "../mixins";
 @import "dark-ali-theme/mixin";
+@import "dark-ali-theme/utilities";
 @import "dark-ali-theme/variable";
 @import "dark-ali-theme/button";
-@import "dark-ali-theme/component";
+
+// Components
+@import "dark-ali-theme/checkbox_radio";
+@import "dark-ali-theme/swtich";
+@import "dark-ali-theme/dropdown";
+@import "dark-ali-theme/input";
+
+// Object
+@import "dark-ali-theme/media";
+
+

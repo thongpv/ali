@@ -1,49 +1,54 @@
 @media only screen and (max-width: 1200px) { 
-	.text-align-lg-r { text-align: right; }
-	.text-align-lg-l { text-align: left; }
-	.text-align-lg-c { text-align: center; }
-	.text-align-lg- { text-align: inherit; }
-	.hidden-lg-down {display: none;}
+	.text-align-lg-r { text-align: right !important; }
+	.text-align-lg-l { text-align: left !important; }
+	.text-align-lg-c { text-align: center !important; }
+	.text-align-lg- { text-align: inherit !important; }
+	.hidden-lg-down {display: none !important;}
 }
 
 @media only screen and (max-width: 992px) { 
-	.text-align-md-r { text-align: right; }
-	.text-align-md-l { text-align: left; }
-	.text-align-md-c { text-align: center; }
-	.text-align-md- { text-align: inherit; }
-	.hidden-md-down {display: none;}
+	.text-align-md-r { text-align: right !important; }
+	.text-align-md-l { text-align: left !important; }
+	.text-align-md-c { text-align: center !important; }
+	.text-align-md- { text-align: inherit !important; }
+	.hidden-md-down {display: none !important;}
 }
 
 @media only screen and (max-width: 768px) {
-	.text-align-sm-r { text-align: right; }
-	.text-align-sm-l { text-align: left; }
-	.text-align-sm-c { text-align: center; }
-	.text-align-sm- { text-align: inherit; }
-	.hidden-sm-down {display: none;}
+	.text-align-sm-r { text-align: right !important; }
+	.text-align-sm-l { text-align: left !important; }
+	.text-align-sm-c { text-align: center !important; }
+	.text-align-sm- { text-align: inherit !important; }
+	.hidden-sm-down {display: none !important;}
 }
 
 @media only screen and (max-width: 544px) { 
-	.text-align-xs-r { text-align: right; }
-	.text-align-xs-l { text-align: left; }
-	.text-align-xs-c { text-align: center; }
-	.text-align-xs- { text-align: inherit; }
-	.hidden-xs-down {display: none;}
+	.text-align-xs-r { text-align: right !important; }
+	.text-align-xs-l { text-align: left !important; }
+	.text-align-xs-c { text-align: center !important; }
+	.text-align-xs- { text-align: inherit !important; }
+	.hidden-xs-down {display: none !important;}
+
+	.media--point .media-body--write-new button {
+		position: static;
+		margin-top: 20px;
+	}
 }
 
 @media only screen and (min-width: 544px) { 
-	.hidden-md-up {display: none;}
+	.hidden-md-up {display: none !important;}
 }
 
 @media only screen and (min-width: 768px) { 
-	.hidden-md-up {display: none;}
+	.hidden-md-up {display: none !important;}
 }
 
 @media only screen and (min-width: 992px) { 
-	.hidden-md-up {display: none;}
+	.hidden-md-up {display: none !important;}
 }
 
 @media only screen and (min-width: 1200px) { 
-	.hidden-lg-up {display: none;}
+	.hidden-lg-up {display: none !important;}
 }
 
 @media screen and (min-width:992px) and (max-width: 1200px) {

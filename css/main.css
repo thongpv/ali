@@ -45,96 +45,100 @@
 /* RESPONSIVE - Page layout styles mobile */
 @media only screen and (max-width: 1200px) {
   .text-align-lg-r {
-    text-align: right;
+    text-align: right !important;
   }
   .text-align-lg-l {
-    text-align: left;
+    text-align: left !important;
   }
   .text-align-lg-c {
-    text-align: center;
+    text-align: center !important;
   }
   .text-align-lg- {
-    text-align: inherit;
+    text-align: inherit !important;
   }
   .hidden-lg-down {
-    display: none;
+    display: none !important;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .text-align-md-r {
-    text-align: right;
+    text-align: right !important;
   }
   .text-align-md-l {
-    text-align: left;
+    text-align: left !important;
   }
   .text-align-md-c {
-    text-align: center;
+    text-align: center !important;
   }
   .text-align-md- {
-    text-align: inherit;
+    text-align: inherit !important;
   }
   .hidden-md-down {
-    display: none;
+    display: none !important;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .text-align-sm-r {
-    text-align: right;
+    text-align: right !important;
   }
   .text-align-sm-l {
-    text-align: left;
+    text-align: left !important;
   }
   .text-align-sm-c {
-    text-align: center;
+    text-align: center !important;
   }
   .text-align-sm- {
-    text-align: inherit;
+    text-align: inherit !important;
   }
   .hidden-sm-down {
-    display: none;
+    display: none !important;
   }
 }
 
 @media only screen and (max-width: 544px) {
   .text-align-xs-r {
-    text-align: right;
+    text-align: right !important;
   }
   .text-align-xs-l {
-    text-align: left;
+    text-align: left !important;
   }
   .text-align-xs-c {
-    text-align: center;
+    text-align: center !important;
   }
   .text-align-xs- {
-    text-align: inherit;
+    text-align: inherit !important;
   }
   .hidden-xs-down {
-    display: none;
+    display: none !important;
+  }
+  .media--point .media-body--write-new button {
+    position: static;
+    margin-top: 20px;
   }
 }
 
 @media only screen and (min-width: 544px) {
   .hidden-md-up {
-    display: none;
+    display: none !important;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hidden-md-up {
-    display: none;
+    display: none !important;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .hidden-md-up {
-    display: none;
+    display: none !important;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .hidden-lg-up {
-    display: none;
+    display: none !important;
   }
 }

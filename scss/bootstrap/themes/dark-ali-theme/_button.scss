@@ -1,38 +1,69 @@
-.dark-theme {
-	.btn {
-		outline: none !important;
-		margin: 3px;
-		@include transition(.15s);
-		@include border-radius(4px);
+.btn {
+	outline: none !important;
+	margin: 3px;
+	min-height: 35px;
+	@include transition(.15s);
+	@include border-radius(4px);
+}
+
+.btn-primary {
+	background-color: $btn-primary-bg;
+
+	&:hover {
+		border: solid 1px #f63664;
+		background-color: #F63665;
 	}
 
-	.btn-primary {
-		background-color: $btn-primary-bg;
+	&:active, &:focus, &:visited {
+		box-shadow: 0 0 0 3px #f6366578 !important;
+		background-color: #F63665 !important;
+		border: solid 1px #f63664 !important;
+	}
+}
 
-  		&:hover {
-  			border: solid 1px #f63664;
-  			background-color: #F63665;
-  		}
-
-  		&:active, &:focus, &:visited {
-			box-shadow: 0 0 0 3px #f6366578 !important;
-			background-color: #F63665 !important;
-			border: solid 1px #f63664 !important;
-  		}
+.btn-default {
+	background-color: $btn-default-bg;
+	border: solid 1px $btn-default-border;
+	
+	&:hover {
+		background-color: #b1bfce36;
 	}
 
-	.btn-default {
-		background-color: $btn-default-bg;
-		border: solid 1px #D7DAE2;
-		
-  		&:hover {
-  			background-color: #b1bfce36;
-  		}
+	&:active, &:focus, &:visited {
+		box-shadow: 0 0 0 3px #f1f1f1 !important;
+		background-color: #e2e6ea !important;
+		border: solid 1px $btn-default-border !important;
+	}
+}
 
-  		&:active, &:focus, &:visited {
-			box-shadow: 0 0 0 3px #f1f1f1 !important;
-			background-color: #e2e6ea !important;
-			border: solid 1px #D7DAE2 !important;
-  		}
+.btn-pink {
+	background-color: $pink-color;
+	color: $btn-pink-color !important;
+	border: solid 1px $pink-color;
+
+	&:hover {
+		border: solid 1px #f63664;
+		background-color: $pink-color-hv;
+	}
+
+	&:active, &:focus, &:visited {
+		box-shadow: 0 0 0 3px #f6366578 !important;
+		background-color: #F63665 !important;
+		border: solid 1px #f63664 !important;
+	}
+}
+
+.btn-hvr-pink {
+	&:hover {
+		border: solid 1px #f63664;
+		color: $white;
+		background-color: $pink-color-hv;
+	}
+
+	&:active, &:focus, &:visited {
+		color: $white !important;
+		box-shadow: 0 0 0 3px #f6366578 !important;
+		background-color: #F63665 !important;
+		border: solid 1px #f63664 !important;
 	}
 }

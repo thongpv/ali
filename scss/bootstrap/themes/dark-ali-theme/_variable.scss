@@ -1,4 +1,28 @@
-$btn-default-bg: #fff;
-$btn-primary-bg: #242539;
+$light-red: #F63663;
+$light-red-hvr: #d8335b;
+$purple: #F63665;
+$blue: #242538;
+$dark-blue: #242539;
+$white: #fff;
 
-$pink-color: #F63665;
+$time-transition: .3s;
+// ------------------------------------
+
+$btn-default-bg: #fff;
+$btn-primary-bg: $dark-blue;
+$btn-default-border: #D7DAE2;
+
+$btn-pink-color: $white;
+$btn-pink-bg: $purple;
+
+$pink-color: $purple;
+$pink-color-hv: $light-red-hvr;
+
+
+
+// switch
+$switchTransition: ($time-transition / 2) ease-out;
+
+// form-control
+$form-control-box-shadow-color: rgba(0,123,255,.25);
+$form-control-box-shadow: 0 0 0 3px $form-control-box-shadow-color;
