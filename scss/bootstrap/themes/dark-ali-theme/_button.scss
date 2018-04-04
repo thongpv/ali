@@ -11,7 +11,7 @@
 
 	&:hover {
 		border: solid 1px #f63664;
-		background-color: #F63665;
+		background-color: $pink-color-hv;
 	}
 
 	&:active, &:focus, &:visited {
@@ -65,5 +65,19 @@
 		box-shadow: 0 0 0 3px #f6366578 !important;
 		background-color: #F63665 !important;
 		border: solid 1px #f63664 !important;
+	}
+}
+
+.ali-icon-down {
+	position: relative;
+
+	&:after {
+		content: "\e917";
+		position: absolute;
+		font-family: 'icomoon' !important;
+		font-size: 7px;
+		top: 50%;
+		right: 5px;
+		transform: translate(-50%, -50%);
 	}
 }

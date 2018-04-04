@@ -6353,6 +6353,14 @@ button.close {
   height: 100% !important;
 }
 
+.color-pink {
+  color: #F63663;
+}
+
+.color-pink-hrv {
+  color: #d8335b;
+}
+
 .btn {
   outline: none !important;
   margin: 3px;
@@ -6371,7 +6379,7 @@ button.close {
 
 .btn-primary:hover {
   border: solid 1px #f63664;
-  background-color: #F63665;
+  background-color: #d8335b;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:visited {
@@ -6423,6 +6431,20 @@ button.close {
   box-shadow: 0 0 0 3px #f6366578 !important;
   background-color: #F63665 !important;
   border: solid 1px #f63664 !important;
+}
+
+.ali-icon-down {
+  position: relative;
+}
+
+.ali-icon-down:after {
+  content: "\e917";
+  position: absolute;
+  font-family: 'icomoon' !important;
+  font-size: 7px;
+  top: 50%;
+  right: 5px;
+  transform: translate(-50%, -50%);
 }
 
 .wrap-custom-box {
@@ -6818,8 +6840,49 @@ textarea.form-control {
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 }
 
+.ali-rating {
+  font-size: 20px !important;
+  margin: 5px;
+}
+
+.ali-rating.rating-symbol-background {
+  color: #FFB303;
+}
+
+.ali-rating.rating-symbol-background + div {
+  color: #FFB303;
+}
+
+.icon-ic-notifications-24px.has-notif:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  border: solid 3px #fff;
+  background-color: #BCBCCB;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.icon-ic-notifications-24px.has-notif--active:after {
+  background-color: #4ad991;
+}
+
+.icon-ic-notifications-24px.has-notif--danger:after {
+  background-color: #F63665;
+}
+
+.icon-ic-notifications-24px.has-notif--warning:after {
+  background: #FFC06A;
+}
+
 .media .badge-verify {
   margin-left: 18px;
+}
+
+.media .badge-verify img {
+  vertical-align: initial;
 }
 
 .media .media-left {
@@ -6852,11 +6915,6 @@ textarea.form-control {
 
 .media .media-body .media_attach-img {
   margin-bottom: 20px;
-}
-
-.media .media-body .media-body_rating .media_rating-box {
-  width: 115px;
-  height: 16px;
 }
 
 .media--panel {
@@ -6897,11 +6955,6 @@ textarea.form-control {
 
 .media--point .media-body {
   vertical-align: middle;
-}
-
-.media--point .media-body .media-body_rating .media_rating-box {
-  width: 115px;
-  height: 16px;
 }
 
 .media--point .media-body--write-new {

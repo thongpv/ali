@@ -1,0 +1,11 @@
+.content-wrapper {
+	padding-left: 260px;
+	padding-top: 30px;
+	background-color: #F0F0F7;
+	min-height: 960px;
+	@include transition(.3s ease-in-out,width .3s ease-in-out);
+
+	.space_wrapper {
+		margin-left: 75px;
+	}
+}

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="" />
+    
+    <title></title>
+    <meta name="title" content=""/>
+    <meta name="keywords" content=""> 
+    <meta name="description" content=""/>
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- /Robots -->
+    
+    <!-- Open Graph protocol -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <!-- /Open Graph protocol -->
+
+    <!-- Dublin Core -->
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.title" content="">
+    <meta name="DC.identifier" content="">
+    <meta name="DC.description" content="">
+    <meta name="DC.subject" content="">
+    <meta name="DC.language" scheme="UTF-8" content="en">
+    <!-- /Dublin Core -->
+
+    <!-- GEO meta -->
+    <meta name="geo.region" content="VN" />
+    <meta name="geo.placename" content="Hồ Chí Minh" />
+    <meta name="geo.position" content="" />
+    <meta name="ICBM" content="" />
+    <!-- GEO meta -->
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image:src" content="" />
+    <meta name="twitter:description" content="" />
+    <!-- /Twitter -->
+
+    <!-- Google Plus -->
+    <html itemscope itemtype="http://schema.org/Product">
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content=""/>
+    <!-- /Google Plus -->
+
+    <!-- Canonical -->
+    <link rel="canonical" href="" />
+    <!-- /Canonical -->
+
+    <!-- Author - Copyright -->
+    <meta name='revisit-after' content='1 days' />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <!-- /Author - Copyright -->    
+    
+    <!-- ICON -->
+    <link rel="icon" sizes="64x64" href="">
+    <link rel="shortcut icon" type="image/x-icon" href=""  />
+    
+    <link rel="stylesheet" href="css/app.bootstrap.css">
+    <link rel="stylesheet" href="sources/animate/animate.css">
+    <link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
+
+    <!-- Rating -->
+    <link rel="stylesheet" href="sources/rating/bootstrap-rating.css">
+
+    <!-- font-ali-awesome -->
+    <link rel="stylesheet" href="sources/font-ali-awesome/font-ali-awesome.css">
+
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="css/all-ie-only.css">
+    <![endif]-->
+
+    <!-- CSS PAGE -->
+    <!-- /CSS PAGE -->
+
+    <style>
+        body {
+            padding-bottom: 400px;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- List Item -->
+                <div class="panel panel-default mar-15">
+                    <div class="panel-body">
+                        <ol>
+                            <li><a href="#elButton">Button</a></li>
+                            <li>
+                                <a href="#elForm">Form</a>
+                                <ul>
+                                    <li><a href="#elCheckbox">Checkbox</a></li>
+                                    <li><a href="#elRadio">Radio</a></li>
+                                    <li><a href="#elSwitch">Switch</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- END:List Item -->
+
+                <h4 id="elButton"># Button</h4>
+                <button class="btn btn-default">Default</button>
+                <button class="btn btn-default btn-hvr-pink">Default Hvr Pink</button>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-pink">+3</button>
+                
+                <!-- Checbox - Radio - Switch -->
+                <div class="clearfix"><br></div>
+                <h4 id="elForm"># Form</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 id="elCheckbox">Checkbox</h5>
+                        <label class="wrap-custom-box"> One
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark-ckb"></span>
+                        </label>
+
+                        <label class="wrap-custom-box"> Two
+                            <input type="checkbox"> 
+                            <span class="checkmark-ckb"></span>
+                        </label>
+
+                        <label class="wrap-custom-box"> Three
+                            <input type="checkbox" disabled="disabled">
+                            <span class="checkmark-ckb"></span>
+                        </label>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 id="elRadio">Radio</h5>
+                        <label class="wrap-custom-box"> One
+                            <input name="radio" type="radio" checked="checked">
+                            <span class="checkmark-rdb"></span>
+                        </label>
+
+                        <label class="wrap-custom-box"> Two
+                            <input name="radio" type="radio">
+                            <span class="checkmark-rdb"></span>
+                        </label>
+
+                        <label class="wrap-custom-box"> Three
+                            <input name="radio" type="radio" disabled="disabled">
+                            <span class="checkmark-rdb"></span>
+                        </label>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 id="elSwitch">Switch</h5>
+                        <label class="wrap-switch-text">
+                            <label class="wrap-switch"> 
+                                <input type="checkbox" class="switch-input" checked="checked">
+                                <span class="switch-label" data-on="On" data-off="Off"></span> 
+                                <span class="switch-handle"></span>
+                            </label>
+                            Choosen 
+                        </label>
+
+                        
+                        <br>
+                        <label class="wrap-switch"> 
+                            <input type="checkbox" class="switch-input">
+                            <span class="switch-label" data-on="On" data-off="Off"></span> 
+                            <span class="switch-handle"></span>
+                        </label>
+                        
+                        <br>
+                        <label class="wrap-switch"> 
+                            <input type="checkbox" class="switch-input" disabled="disabled">
+                            <span class="switch-label" data-on="On" data-off="Off"></span> 
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                </div>
+                <!-- END: Checbox - Radio - Switch -->
+                
+                <br><br># Media Point
+                <!-- Media Object Point -->
+                <div class="media media--point">
+                    <div class="media-left media-top">
+                        <button class="btn btn-primary fw-bold">4.5</button>
+                    </div>
+
+                    <div class="media-body media-body--write-new">
+                        <h4 class="media-heading fz14 fw-bold">
+                            <a href="#">Maximus Bernhard</a>
+                        </h4>
+                        <p class="fz14 fw-bold mr0">Based on 120 reviews</p>
+                        <div class="media-body_rating mar-b-10">
+                            <div class="media_rating-box d-inline-block text-center">
+                                <input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star fa fa-star fa-3x" data-empty="ali-rating ali-rating--star fa fa-star-o fa-3x" data-fractions="2"/>
+                            </div>
+                            <span class="badge-verify"><img src="http://via.placeholder.com/12x14"></span>
+                        </div>
+
+                        <button class="btn btn-primary fw-bold">Write a review</button>
+                    </div>
+                </div>
+                <!-- END: Media Object Point -->
+                
+                <br><br># Media
+                <!-- Media Object -->
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://via.placeholder.com/67x67" class="media-object img-rounded mar-b-5" style="width:67px">
+                        <h4 class="media-left_name fz11 text-center fw-bold mar-0">
+                            <a href="#">Maximus Bernhard</a>
+                        </h4>
+                        <div class="media-left_location p-relative text-center mar-b-5">
+                            <img src="http://via.placeholder.com/20x13" alt="" class="mar-r-10">
+                            <span class="fw-bold fz13">AM</span>
+                        </div>
+                    </div>
+
+                    <div class="media-body">
+                        <h4 class="media-heading fz14 fw-bold p-realative date-time" media-time="23/02/2018">
+                            <a href="#">Maximus Bernhard</a>
+                            <span class="badge-verify"><img src="http://via.placeholder.com/12x14"></span>
+                        </h4>
+
+                        <div class="media-left_location p-relative mar-b-5">
+                            <img src="http://via.placeholder.com/20x13" alt="" class="mar-r-10">
+                            <span class="fw-bold fz13">AM</span>
+                        </div>
+
+                        <div class="media-body_rating mar-b-10">
+                            <div class="media_rating-box d-inline-block text-center">
+                                <input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star fa fa-star fa-3x" data-empty="ali-rating ali-rating--star fa fa-star-o fa-3x" data-fractions="2"/>
+                            </div>
+                            <span class="badge-verify"><img src="http://via.placeholder.com/12x14"></span>
+                        </div>
+
+                        <article class="media-body_cnt fz11 mar-b-10">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, iusto!</p>
+                        </article>
+
+                        <div class="media_attach-img">
+                            <img src="http://via.placeholder.com/40x40" class="img-rounded " style="width:40px">
+                            <img src="http://via.placeholder.com/40x40" class="img-rounded " style="width:40px">
+                            <img src="http://via.placeholder.com/40x40" class="img-rounded " style="width:40px">
+                        </div>
+
+                        <div class="media_like fz11">
+                            <b class="mar-r-10">120 <img src="http://via.placeholder.com/16x15"></b>
+                            <b>30 <img src="http://via.placeholder.com/16x15"></b>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Media Object -->
+                
+                <br><br>
+                # Media Panel
+                <!-- Media Object -->
+                <div class="media media--panel">
+                    <div class="media-left">
+                        <img src="http://via.placeholder.com/67x67" class="media-object img-rounded mar-b-5" style="width:67px">
+                        <h4 class="media-left_name fz11 text-center fw-bold mar-0">
+                            <a href="#">Maximus Bernhard</a>
+                        </h4>
+                        <div class="media-left_location p-relative text-center mar-b-5">
+                            <img src="http://via.placeholder.com/20x13" alt="" class="mar-r-10">
+                            <span class="fw-bold fz13">AM</span>
+                        </div>
+                    </div>
+
+                    <div class="media-body">
+                        <h4 class="media-heading fz14 fw-bold p-realative date-time" media-time="23/02/2018">
+                            <a href="#">Maximus Bernhard</a>
+                            <span class="badge-verify"><img src="http://via.placeholder.com/12x14"></span>
+                        </h4>
+
+                        <div class="media-left_location p-relative mar-b-5">
+                            <img src="http://via.placeholder.com/20x13" alt="" class="mar-r-10">
+                            <span class="fw-bold fz13">AM</span>
+                        </div>
+
+                        <div class="media-body_rating mar-b-10">
+                            <div class="media_rating-box d-inline-block text-center">
+                                <input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star fa fa-star fa-3x" data-empty="ali-rating ali-rating--star fa fa-star-o fa-3x" data-fractions="2"/>
+                            </div>
+                            <span class="badge-verify"><img src="http://via.placeholder.com/12x14"></span>
+                        </div>
+
+                        <article class="media-body_cnt fz11 mar-b-10">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, iusto!</p>
+                        </article>
+
+                        <div class="media_attach-img">
+                            <img src="http://via.placeholder.com/40x40" class="img-rounded " style="width:40px">
+                            <img src="http://via.placeholder.com/40x40" class="img-rounded " style="width:40px">
+                            <img src="http://via.placeholder.com/40x40" class="img-rounded " style="width:40px">
+                        </div>
+
+                        <div class="media_like fz11">
+                            <b class="mar-r-10">120 <img src="http://via.placeholder.com/16x15"></b>
+                            <b>30 <img src="http://via.placeholder.com/16x15"></b>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Media Object -->
+
+                <br><br id="elForm"># Form
+                <!-- Form -->
+                <br>#Dropdown image
+                <form>
+                    <div class="form-group">
+                        <label for="select">Select</label>
+                        <select class="select2 form-control" id="select" name="state">
+                            <option value="AL">lrem</option>
+                            <option value="WY">Lorem ipsum dolor sit amet.</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="textbox">Textbox</label>
+                        <input type="textbox" id="textbox" name="" placeholder="" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="textarea">Textarea</label>
+                        <textarea id="textarea" name="" placeholder="" class="form-control" /></textarea>
+                    </div>
+                    
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            # Dropdown image single option: divider - dropdown-header
+                            <div class="form-group">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle dropdown--caret dropdown--demo" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                        <span class="dropdown--demo__show"></span>
+                                        <span>Dropdown</span>
+                                    </button>
+
+                                    <div class="dropdown-menu dropdown-menu--rdb dropdown-menu--single" aria-labelledby="dropdownMenu1">
+                                        <label>
+                                            <input type="radio" name="rdb-single">
+                                            <img src="http://via.placeholder.com/22x22" alt="">
+                                            Lorem ipsum dolor sit amet.
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="rdb-single">
+                                            <img src="http://via.placeholder.com/22x22" alt="">
+                                            Lorem ipsum dolor sit amet.
+                                        </label>
+                                        <div class="divider">Lorem ipsum.</div>
+
+                                        <label>
+                                            <input type="radio" name="rdb-single">
+                                            <img src="http://via.placeholder.com/22x22" alt="">
+                                            Lorem ipsum dolor sit amet.
+                                        </label>
+                                        <div class="dropdown-header">Lorem ipsum.</div>
+                                        <label>
+                                            <input type="radio" name="rdb-single">
+                                            <img src="http://via.placeholder.com/22x22" alt="">
+                                            Lorem ipsum dolor sit amet.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            # Dropdup image single
+                            <div class="form-group">
+                                <div class="dropup">
+                                    <button class="btn btn-default dropdown-toggle dropdown--caret dropdown--demo" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                        <span class="dropdown--demo__show"></span>
+                                        <span>Drop up</span>
+                                    </button>
+
+                                    <div class="dropdown-menu dropdown-menu--rdb dropdown-menu--single" aria-labelledby="dropdownMenu1">
+                                        <label>
+                                            <input type="radio" name="rdb-single">
+                                            <img src="http://via.placeholder.com/22x22" alt="">
+                                            Lorem ipsum dolor sit amet.
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="rdb-single">
+                                            <img src="http://via.placeholder.com/22x22" alt="">
+                                            Lorem ipsum dolor sit amet.
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="rdb-single">
+                                            <img src="http://via.placeholder.com/22x22" alt="">
+                                            Lorem ipsum dolor sit amet.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br><br># Dropdown image
+                            <div class="form-group">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle dropdown--caret dropdown--demo" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                        <span class="dropdown--demo__show"></span>
+                                        <span>Dropdown</span>
+                                    </button>
+
+                                    <div class="dropdown-menu dropdown-menu--rdb" aria-labelledby="dropdownMenu1">
+                                        <div class="drop-rdb_1">
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+                                        </div>
+
+                                        <div class="drop-rdb_2">
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br><br>
+                            # Dropd up image
+                            <div class="form-group">
+                                <div class="dropup">
+                                    <button class="btn btn-default dropdown-toggle dropdown--caret dropdown--demo" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                        <span class="dropdown--demo__show"></span>
+                                        <span>Drop up</span>
+                                    </button>
+
+                                    <div class="dropdown-menu dropdown-menu--rdb dropdown-menu--top" aria-labelledby="dropdownMenu1">
+                                        <div class="drop-rdb_1">
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+                                        </div>
+
+                                        <div class="drop-rdb_2">
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            # Dropdown image full width
+                            <div class="form-group">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle dropdown--caret dropdown--demo form-control" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                        <span class="dropdown--demo__show"></span>
+                                        <span>Dropdown</span>
+                                    </button>
+
+                                    <div class="dropdown-menu dropdown-menu--rdb w-100" aria-labelledby="dropdownMenu1">
+                                        <div class="drop-rdb_1">
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+                                        </div>
+
+                                        <div class="drop-rdb_2">
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            # Dropd up image up full width
+                            <div class="form-group">
+                                <div class="dropup">
+                                    <button class="btn btn-default dropdown-toggle dropdown--caret dropdown--demo form-control" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                        <span class="dropdown--demo__show"></span>
+                                        <span>Drop up</span>
+                                    </button>
+
+                                    <div class="dropdown-menu dropdown-menu--rdb w-100" aria-labelledby="dropdownMenu1">
+                                        <div class="drop-rdb_1">
+                                            <label>
+                                                <input type="radio" name="rdb5" value="rdb5 - 1">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb5" value="rdb5 - 2">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb5" value="rdb5 - 3">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb5" value="rdb5 - 4">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb5" value="rdb5 - 5">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb5" value="rdb5 - 6">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb5" value="rdb5 - 7">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb5" value="rdb5 - 8">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb5" value="rdb5 - 9">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb5" value="rdb5 - 10">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+                                        </div>
+
+                                        <div class="drop-rdb_2">
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END: Form -->
+                
+                <!-- Rating -->
+                <br><br># Rating <br>
+                <input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star fa fa-star fa-3x" data-empty="ali-rating ali-rating--star fa fa-star-o fa-3x" data-fractions="2"/>
+                <span>(Base on 110 Reviews)</span>
+                <!-- END: Rating -->
+                
+                <hr>
+                <br><br>
+                # Icon
+                <br>
+                <span class="icon-ic-notifications-24px has-notif  p-relative"></span> has-notif - 
+                <span class="icon-ic-notifications-24px has-notif has-notif--danger  p-relative"></span> has-notif--danger - 
+                <span class="icon-ic-notifications-24px has-notif has-notif--active  p-relative"></span> has-notif--active - 
+                <span class="icon-ic-notifications-24px has-notif has-notif--warning  p-relative"></span> has-notif--warning
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="sources/bootstrap-3/js/bootstrap.min.js"></script>
+    <script src="sources/animate/wow.min.js"></script>
+
+    <!-- Rating -->
+    <script src="sources/rating/bootstrap-rating.min.js"></script>
+
+    <!-- SCRIPT PAGE -->
+    <!-- /SCRIPT PAGE -->
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "_URL_CURRENT",
+            "logo": "_IMAGE_CURRENT",
+            "contactPoint" : [
+                {
+                    "@type" : "ContactPoint",
+                    "telephone" : "_PHONE",
+                    "contactType" : "Customer service"
+                }
+            ],
+            "sameAs" : [
+                "_FACEBOOK"  
+            ],
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "",
+                "query-input": ""
+            }
+        }
+    </script>
+
+    <!-- /Microformat -->
+
+    <!-- ADD ALT - SEO -->
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $('img').each(function(index, element) {
+                if(!$(this).attr('alt') || $(this).attr('alt')=='')
+                {
+                    $(this).attr('alt','Domain.com');
+                }
+            });
+        });
+    </script>
+    <!-- /ADD ALT - SEO -->
+
+    <script>
+        $(function() {
+            $('.rating-tooltip-manual').rating({
+                extendSymbol: function() {
+                    var title;
+                    $(this).tooltip({
+                        container: 'body',
+                        placement: 'top',
+                        trigger: 'manual',
+                        title: function() {
+                            return title;
+                        }
+                    });
+                    $(this).on('rating.rateenter', function(e, rate) {
+                        title = rate;
+                        $(this).tooltip('show');
+                    })
+                    .on('rating.rateleave', function() {
+                        $(this).tooltip('hide');
+                    });
+                }
+            });
+        }); 
+</script>
+</body>
+</html>
