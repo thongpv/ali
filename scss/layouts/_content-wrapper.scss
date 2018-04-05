@@ -3,6 +3,8 @@
 	padding-top: 30px;
 	background-color: #F0F0F7;
 	min-height: 960px;
+	height: 100%;
+	width: 100%;
 	@include transition(.3s ease-in-out,width .3s ease-in-out);
 
 	.space_wrapper {

@@ -84,6 +84,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+<!-- body class: navbar-fixed -->
 <body>
     <div class="wrapper">
     <!-- HEADER -->
@@ -98,13 +99,13 @@
 
         <nav class="navbar navbar-static-top">
             <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle hidden-sm hidden-md hidden-lg" data-toggle="push-menu" role="button">
+            <a class="sidebar-toggle hidden-md hidden-lg" data-toggle="push-menu" role="button">
                 <span class="icon-ic-menu-24px"></span>
             </a>
 
-            <ul class="nav navbar-nav navigation hidden-xs">
+            <ul class="nav navbar-nav navigation hidden-xs hidden-sm">
                 <li>
-                    <a href="#"><span class="icon-icon_home"></span> Dashboard</a>
+                    <a><span class="icon-icon_home"></span> Dashboard</a>
                 </li>
 
                 <li>
@@ -375,42 +376,43 @@
     
     <!-- SIDEBAR -->
     <aside class="main-sidebar">
-        <ul class="sidebar-menu tree">
-            <li class="header">MAIN NAVIGATION</li>
-            <!-- <li class="active"><a href="#">Lorem ipsum dolor single</a></li> -->
-            <li>
-                <a data-toggle="collapse" href="#collapse1" class="ico-favorite">Manage Reviews</a>
-                <div id="collapse1" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <ul>
-                            <li><a href="#" class="ico-hourglass">Pending Reviews</a></li>
-                            <li><a href="#" class="ico-approve-review">Approve Reviews</a></li>
-                            <li><a href="#" class="ico-create-review">Create Review Page</a></li>
-                            <li><a href="#" class="ico-default-review">Default Reviews</a></li>
-                        </ul>
+        <div class="wrapper-sidebar">
+            <ul class="sidebar-menu tree">
+                <li class="header">MAIN NAVIGATION</li>
+                <!-- <li class="active"><a href="#">Lorem ipsum dolor single</a></li> -->
+                <li>
+                    <a data-toggle="collapse" href="#collapse1" class="ico-favorite">Manage Reviews</a>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#" class="ico-hourglass">Pending Reviews</a></li>
+                                <li><a href="#" class="ico-approve-review">Approve Reviews</a></li>
+                                <li><a href="#" class="ico-create-review">Create Review Page</a></li>
+                                <li><a href="#" class="ico-default-review">Default Reviews</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li>
-                <a data-toggle="collapse" href="#collapse2" class="ico-general-setting">General Settings</a>
-                <div id="collapse2" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <ul>
-                            <li><a href="#" class="ico-input-form">Input Form Edit</a></li>
-                            <li class="active"><a href="#" class="ico-comment-form">Comment Form Edit</a></li>
-                        </ul>
+                <li>
+                    <a data-toggle="collapse" href="#collapse2" class="ico-general-setting">General Settings</a>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#" class="ico-input-form">Input Form Edit</a></li>
+                                <li class="active"><a href="#" class="ico-comment-form">Comment Form Edit</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li class="header">MAIN NAVIGATION</li>
-            <li><a href="#" class="ico-app-intergration">Apps Intergration</a></li>
-            <li><a href="#" class="ico-get-star">Get starts</a></li>
-            <li class="divide"></li>
-            <li><a href="#" class="ico-upgrade-version">Upgrade version</a></li>
-
-        </li>
+                <li class="header">MAIN NAVIGATION</li>
+                <li><a href="#" class="ico-app-intergration">Apps Intergration</a></li>
+                <li><a href="#" class="ico-get-star">Get starts</a></li>
+                <li class="divide"></li>
+                <li><a href="#" class="ico-upgrade-version">Upgrade version</a></li>
+            </ul>
+        </div>
     </aside>
     <!-- END: SIDEBAR -->
     
@@ -471,5 +473,7 @@
         });
     </script>
     <!-- /ADD ALT - SEO -->
+
+    <div class="blind-wall-menu"></div>
 </body>
 </html>

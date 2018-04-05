@@ -37,6 +37,51 @@
 /* PAGES - Contact */
 /* PAGES - Home */
 /* LAYOUTS - styles */
+[class^="blind-wall"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000096;
+  opacity: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+[class^="blind-wall"].open {
+  opacity: 1;
+  z-index: 1050;
+}
+
+.open-overflow {
+  overflow: hidden;
+}
+
+.open-menu aside.main-sidebar {
+  left: 0;
+}
+
+.open-menu--push .content-wrapper {
+  padding-left: 260px;
+}
+
+.open-menu--push aside.main-sidebar {
+  left: 0;
+}
+
+.navbar-fixed header.main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-fixed div.content-wrapper {
+  padding-top: 100px;
+}
+
 /* LAYOUTS - styles */
 body {
   height: 100%;
@@ -52,7 +97,7 @@ body {
 header.main-header {
   position: relative;
   max-height: 70px;
-  z-index: 1030;
+  z-index: 1070;
   background-color: #fff;
 }
 
@@ -66,6 +111,8 @@ header.main-header .navbar-custom-menu {
 }
 
 header.main-header .logo {
+  position: relative;
+  z-index: 1024;
   display: block;
   float: left;
   font-size: 20px;
@@ -232,6 +279,7 @@ header.main-header ul.dropdown-menu {
   padding: 25px;
   width: 460px;
   position: absolute;
+  top: 90%;
   right: 0;
   left: auto;
   border-radius: 4px;
@@ -251,12 +299,16 @@ header.main-header ul.dropdown-menu::after, header.main-header ul.dropdown-menu:
   border-left: 4px solid transparent;
   position: absolute;
   top: -10px;
-  right: 25px;
+  right: 15px;
 }
 
 header.main-header ul.dropdown-menu::after {
   border-bottom: 10px solid #ffffff;
   top: -8px;
+}
+
+header.main-header .navbar-custom-menu .user .dropdown-menu::after, header.main-header .navbar-custom-menu .user .dropdown-menu::before {
+  right: 27px;
 }
 
 aside.main-sidebar {
@@ -266,7 +318,7 @@ aside.main-sidebar {
   padding-top: 70px;
   min-height: 100%;
   width: 260px;
-  z-index: 810;
+  z-index: 1060;
   background-color: #242539;
   color: #fff;
   -webkit-transition: 0.3s ease-in-out, width 0.3s ease-in-out;
@@ -396,6 +448,8 @@ aside.main-sidebar li.header {
   padding-top: 30px;
   background-color: #F0F0F7;
   min-height: 960px;
+  height: 100%;
+  width: 100%;
   -webkit-transition: 0.3s ease-in-out, width 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out, width 0.3s ease-in-out;
   transition: 0.3s ease-in-out, width 0.3s ease-in-out;
@@ -440,6 +494,31 @@ aside.main-sidebar li.header {
   .hidden-md-down {
     display: none !important;
   }
+  .main-header {
+    max-height: 140px !important;
+  }
+  .main-header .logo {
+    width: 100% !important;
+  }
+  .main-header nav.navbar {
+    width: 100% !important;
+    margin-left: 0 !important;
+    box-shadow: 0 0 0;
+    border-bottom: solid 1px #caced5;
+  }
+  aside.main-sidebar {
+    padding-top: 140px !important;
+    left: -260px;
+  }
+  .content-wrapper {
+    padding-left: 0;
+  }
+  .content-wrapper .space_wrapper {
+    margin-left: 0;
+  }
+  .navbar-fixed div.content-wrapper {
+    padding-top: 170px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -467,27 +546,20 @@ aside.main-sidebar li.header {
   .nav li {
     float: left;
   }
-  .main-header {
-    max-height: 140px !important;
+  header.main-header .navbar-custom-menu ul.nav li {
+    position: static;
   }
-  .main-header .logo {
-    width: 100% !important;
+  header.main-header .navbar-custom-menu ul.nav li ul.dropdown-menu {
+    position: absolute;
+    top: inherit;
+    left: 50%;
+    width: 95%;
+    transform: translate(-50%, 5px);
+    background-color: #fff;
+    border: solid 1px #c9c9ce;
   }
-  .main-header nav.navbar {
-    width: 100% !important;
-    margin-left: 0 !important;
-    box-shadow: 0 0 0;
-    border-bottom: solid 1px #caced5;
-  }
-  aside.main-sidebar {
-    padding-top: 140px;
-    left: -260px;
-  }
-  .content-wrapper {
-    padding-left: 0;
-  }
-  .content-wrapper .space_wrapper {
-    margin-left: 0;
+  header.main-header .navbar-custom-menu ul.nav li ul.dropdown-menu:before, header.main-header .navbar-custom-menu ul.nav li ul.dropdown-menu:after {
+    content: none;
   }
 }
 

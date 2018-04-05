@@ -24,6 +24,8 @@ header.main-header {
 	}
 
 	.logo {
+		position: relative;
+		z-index: 1024;
 		display: block;
 		float: left;
 		font-size: 20px;
@@ -197,6 +199,7 @@ header.main-header {
 		padding: 25px;
 		width: 460px;
 		position: absolute;
+	    top: 90%;
 		right: 0;
 		left: auto;
 		border-radius: 4px;
@@ -215,12 +218,18 @@ header.main-header {
 			border-left: 4px solid transparent;
 			position: absolute;
 			top: -10px;
-			right: 25px;
+			right: 15px;
 		}
 
 		&::after {
 			border-bottom: 10px solid #ffffff;
 			top: -8px;
+		}
+	}
+
+	.navbar-custom-menu .user .dropdown-menu {
+		&::after, &::before {
+			right: 27px;
 		}
 	}
 }

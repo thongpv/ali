@@ -4,6 +4,7 @@ $(document).ready(function() {
 	new WOW().init();
 
 	// FUNCTION
+	toggleMenuMobile();
 });
 
 function backToTop() {
@@ -32,4 +33,18 @@ function backToTop() {
 
 function select2() {
     $('.select2').select2();
+}
+
+// data-toggle: push-menu - over-menu
+function toggleMenuMobile() {
+	$('.sidebar-toggle').on('click', function() {
+		var _data_toggle = $(this).attr('data-toggle');
+		if(_data_toggle == "push-menu") {
+			$('body').toggleClass('open-menu open-menu--push');
+		} 
+		else if( _data_toggle == "over-menu") {
+			
+			$('.blind-wall-menu').toggleClass('open');
+		}
+	});
 }

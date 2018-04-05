@@ -5,7 +5,7 @@ aside.main-sidebar {
     padding-top: 70px;
     min-height: 100%;
     width: 260px;
-    z-index: 810;
+    z-index: $main-sidebar-zindex;
     background-color: $sidebar-main;
     color: $white;
     @include transition(.3s ease-in-out,width .3s ease-in-out);
