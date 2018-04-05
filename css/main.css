@@ -445,7 +445,6 @@ aside.main-sidebar li.header {
 
 .content-wrapper {
   padding-left: 260px;
-  padding-top: 30px;
   background-color: #F0F0F7;
   min-height: 960px;
   height: 100%;
@@ -494,6 +493,9 @@ aside.main-sidebar li.header {
   .hidden-md-down {
     display: none !important;
   }
+  .table-responsive {
+    overflow-x: auto !important;
+  }
   .main-header {
     max-height: 140px !important;
   }
@@ -518,6 +520,10 @@ aside.main-sidebar li.header {
   }
   .navbar-fixed div.content-wrapper {
     padding-top: 170px;
+  }
+  .table-ali-custom tr td p.table-note {
+    -webkit-line-clamp: 1;
+    display: block;
   }
 }
 

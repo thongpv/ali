@@ -11,4 +11,8 @@
     &.rating-symbol-background + div{
 		color: $rating-star-bg;
     }
+
+    &[class^="icon-"], &[class*=" icon-"] {
+        display: inline-block;
+    }
 }

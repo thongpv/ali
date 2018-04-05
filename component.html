@@ -77,6 +77,10 @@
 
     <!-- font-ali-awesome -->
     <link rel="stylesheet" href="sources/font-ali-awesome/font-ali-awesome.css">
+    
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="sources/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="sources/owl-carousel/css/owl.theme.default.min.css">
 
     <!--[if IE]>
     <link rel="stylesheet" type="text/css" href="css/all-ie-only.css">
@@ -88,6 +92,7 @@
     <style>
         body {
             padding-bottom: 400px;
+            background-color: #eee;
         }
     </style>
 
@@ -905,7 +910,318 @@
                 <span class="icon-ic-notifications-24px has-notif has-notif--danger  p-relative"></span> has-notif--danger - 
                 <span class="icon-ic-notifications-24px has-notif has-notif--active  p-relative"></span> has-notif--active - 
                 <span class="icon-ic-notifications-24px has-notif has-notif--warning  p-relative"></span> has-notif--warning
-            </div>
+
+                <br><br># Div table - responesive: wrapper-tbl-responsive <br>
+                <!-- <div class="wrapper-tbl-responsive">
+                    <div class="wrapper-tbl">
+                        <div class="wrapper-tbl__header">
+                            <div class="wrapper-tbl__td">#</div>
+                            <div class="wrapper-tbl__td">Reviewer Name</div>
+                            <div class="wrapper-tbl__td">Rating</div>
+                            <div class="wrapper-tbl__td">Feedback</div>
+                            <div class="wrapper-tbl__td">Photos</div>
+                            <div class="wrapper-tbl__td">Product</div>
+                            <div class="wrapper-tbl__td">Action</div>
+                        </div>
+
+                        <div class="wrapper-tbl__tr">
+                            <div class="wrapper-tbl__td">1</div>
+                            <div class="wrapper-tbl__td">
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <img src="http://via.placeholder.com/50x50" class="media-object img-rounded mar-b-5 img-circle" style="width:50px">
+                                    </div>
+
+                                    <div class="media-body">
+                                        <h4 class="media-heading fz14 fw-bold p-realative">
+                                            <a href="#">Maximus Bernhard</a>
+                                            <span class="badge-verify"><img src="http://via.placeholder.com/12x14"></span>
+                                        </h4>
+
+                                        <div class="media-left_location p-relative mar-b-5">
+                                            <img src="http://via.placeholder.com/20x13" alt="" class="mar-r-10">
+                                            <span class="fw-bold fz13">Country Name</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapper-tbl__td">
+                                <input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star icon-ic-star-24px" data-empty="ali-rating ali-rating--star icon-ic-star-border-24px" data-fractions="2"/>
+                            </div>
+                            <div class="wrapper-tbl__td">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis velit. Integer consequat, </div>
+                            <div class="wrapper-tbl__td">
+                                <img src="http://via.placeholder.com/35x35" alt="">
+                                <img src="http://via.placeholder.com/35x35" alt="">
+                                <img src="http://via.placeholder.com/35x35" alt="">
+                                <button class="btn btn-primary fw-bold">+3</button>
+                            </div>
+                            <div class="wrapper-tbl__td">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, animi.</div>
+                            <div class="wrapper-tbl__td text-center">
+                                <button class="btn btn-primary fw-bold">Appove</button>
+                                <button class="btn btn-default btn-hvr-pink">
+                                    <span class="icon-ic-delete-forever-24px"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="wrapper-tbl__footer">
+                            <div class="wrapper-tbl__td">#</div>
+                            <div class="wrapper-tbl__td">Reviewer Name</div>
+                            <div class="wrapper-tbl__td">Rating</div>
+                            <div class="wrapper-tbl__td">Feedback</div>
+                            <div class="wrapper-tbl__td">Photos</div>
+                            <div class="wrapper-tbl__td">Product</div>
+                            <div class="wrapper-tbl__td">Action</div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <br><br># Table<br>
+
+                <label class="wrap-custom-box"> Select all
+                    <input type="checkbox" class="row-select-action" table-id="table-select-all">
+                    <span class="checkmark-ckb"></span>
+                </label>
+                
+                <br><br> # Wrapper table action top
+                <div class="wrapper-tbl-action">
+                    <label class="wrap-custom-box d-inline-block"> Total: <span class="color-pink">120</span> reviews
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark-ckb"></span>
+                    </label>
+
+                    <div class="btn-group action-group">
+                        <button type="button" class="btn btn-default btn-hvr-pink dropdown-toggle dropdown--caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action 
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Publish</a></li>
+                            <li><a href="#">Unpublish</a></li>
+                            <li><a href="#">Delete</a></li>
+                        </ul>
+                    </div>
+
+    
+                    <button class="btn btn-primary fw-bold pull-right">
+                        Remove All
+                    </button>
+
+                    <button class="btn btn-default btn-hvr-pink fw-bold pull-right mar-r-15">
+                        Approve All
+                    </button>
+
+                    <div class="clearfix"></div>
+                </div>
+            
+                <div class="table-responsive">
+                    <table class="table table-hover table-ali-custom table-mid" id="table-select-all">
+                        <thead>
+                            <tr>
+                                <th width="5%" class="text-center">#</th>
+                                <th width="25%">Reviewer Name</th>
+                                <th width="20%">Rating</th>
+                                <th width="10%">Feedback</th>
+                                <th width="15%">Photos</th>
+                                <th width="10%">Product</th>
+                                <th width="15%">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">
+                                    <label class="wrap-custom-box">
+                                        <input type="checkbox" class="row-select">
+                                        <span class="checkmark-ckb"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="http://via.placeholder.com/50x50" class="media-object img-rounded mar-b-5 img-circle" style="width:50px">
+                                        </div>
+
+                                        <div class="media-body">
+                                            <h4 class="media-heading fz14 fw-bold p-realative">
+                                                <a href="#">Maximus Bernhard</a>
+                                            </h4>
+
+                                            <div class="media-left_location p-relative">
+                                                <img src="http://via.placeholder.com/20x13" alt="" class="mar-r-10">
+                                                <span class="fz13">Country Name</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-rating"><input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star icon-ic-star-24px" data-empty="ali-rating ali-rating--star icon-ic-star-border-24px" data-fractions="2"/></td>
+                                <td>
+                                    <p class="fz11 text-over-3 mr0 pad-r-10 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum culpa error cumque soluta, qui.</p>
+                                </td>
+                                <td>
+                                    <img src="http://via.placeholder.com/35x35" alt="" class="img-rounded">
+                                    <img src="http://via.placeholder.com/35x35" alt="" class="img-rounded">
+                                    <div class="dropdown d-inline-block">
+                                    <button class="btn dropdown-toggle btn-primary fw-bold" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                        <span>+3</span>
+                                    </button>
+
+                                    <div class="dropdown-menu dropdown-menu--rdb dropdown-menu--top" aria-labelledby="dropdownMenu1">
+                                        <div class="drop-rdb_1">
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="rdb">
+                                                <img src="http://via.placeholder.com/22x22" alt="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                </td>
+                                <td>
+                                    <p class="fz11 text-over-3 mr0 pad-r-10 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fugit saepe pariatur. Suscipit in, minus.</p>
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-primary fw-bold">Appove</button>
+                                    <button class="btn btn-default btn-hvr-pink">
+                                        <span class="icon-ic-delete-forever-24px"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p><br># Pagination</p>
+                <div class="text-right">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination ali-pagination">
+                            <li class="disabled">
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <p><br># Owl Carousel 2</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="wrapper-owl">
+                            <div class="owl-carousel owl-theme ali-owl ali-owl--style-1">
+                                <div class="item"><img src="http://via.placeholder.com/400x250" alt=""></div>
+                                <div class="item"><img src="http://via.placeholder.com/400x250" alt=""></div>
+                                <div class="item"><img src="http://via.placeholder.com/400x250" alt=""></div>
+                                <div class="item"><img src="http://via.placeholder.com/400x250" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3 class="ali-owl--title">Get Install Now</h3>
+                        <h4 class="ali-owl--sub-title">STEP 1</h4>
+                        <p  class="ali-owl--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium mauris lectus.</p>
+
+                        <div class="ali-owl-btn">
+                        </div>
+                    </div>
+                </div>
+
+                <code>
+                    <p># Event: initialized</p>
+                    HTML: <pre>< div class="ali-owl-btn"></pre>
+                    <p>JS</p>
+                    <pre>
+                    var owl = $('.owl-carousel');
+                    owl.on('initialized.owl.carousel', function(event){ 
+                        var _count_item = event.item.count;
+                        var _elWrap = $('.ali-owl-btn');
+                        for(var i=0; i<_count_item; i++) {
+                            if(i == 0)
+                                $(_elWrap).append("< button class=\"btn btn-default btn-hvr-pink active\" owl-index=\""+i+"\">"+(i+1)+"</ button>");
+                            else 
+                                $(_elWrap).append("< button class=\"btn btn-default btn-hvr-pink\" owl-index=\""+i+"\">"+(i+1)+"</ button>");
+                        }
+                    });
+                    </pre>
+                </code>
+
+                <code>
+                    <p># Event: changed</p>
+                    <p>JS</p>
+                    <pre>owl.on('changed.owl.carousel', function(event) {
+                    var _owl_index = event.page.index;
+                    var _buttons = $('.ali-owl-btn').find('button');
+                    var _data = _json_data[_owl_index];
+
+                    $('.ali-owl--title').text(_data.title);
+                    $('.ali-owl--sub-title').text(_data.sub_title);
+                    $('.ali-owl--description').text(_data.description);
+
+                    _buttons.each(function(index, el) {
+                        $(el).removeClass('active');
+                        $(_buttons[_owl_index]).addClass('active');
+                    });
+                })</pre>
+                </code>
+    
+    
+            </div> <!-- Container -->
         </div>
     </div>
     
@@ -915,6 +1231,78 @@
 
     <!-- Rating -->
     <script src="sources/rating/bootstrap-rating.min.js"></script>
+    
+    <!-- owl-carousel -->
+    <script src="sources/owl-carousel/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            aliSlideOwlStep();
+            function aliSlideOwlStep() {
+                var _json_data = [
+                    {
+                        "title": "Get Install Now",
+                        "sub_title": "STEP 1",
+                        "description": "Lorem ipsum dolor sit amet."
+                    },
+                    {
+                        "title": "Ervin Howell",
+                        "sub_title": "STEP 2",
+                        "description": "Shanna@melissa.tv"
+                    },
+                    {
+                        "title": "Antonette",
+                        "sub_title": "STEP 3",
+                        "description": "Victor Plains"
+                    },
+                    {
+                        "title": "Clementine Bauch",
+                        "sub_title": "STEP 4",
+                        "description": "Douglas Extension"
+                    }
+                ];
+
+                var owl = $('.owl-carousel');
+                owl.on('initialized.owl.carousel', function(event){ 
+                    var _count_item = event.item.count;
+                    var _elWrap = $('.ali-owl-btn');
+                    for(var i=0; i<_count_item; i++) {
+                        if(i == 0)
+                            $(_elWrap).append("<button class=\"btn btn-default btn-hvr-pink active\" owl-index=\""+i+"\">"+(i+1)+"</button>");
+                        else 
+                            $(_elWrap).append("<button class=\"btn btn-default btn-hvr-pink\" owl-index=\""+i+"\">"+(i+1)+"</button>");
+                    }
+
+                    $('.ali-owl-btn button').on('click', function(ele) {
+                    })
+                });
+                owl.owlCarousel({
+                    items: 1,
+                    margin: 20,
+                    nav: true,
+                    dots: true,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoWidth:false,
+                    navText: ['<span class="icon-ic-navigate-before-24px"></span>', '<span class="icon-ic-navigate-next-24px"></span>']
+                });
+                owl.on('changed.owl.carousel', function(event) {
+                    var _owl_index = event.page.index;
+                    var _buttons = $('.ali-owl-btn').find('button');
+                    var _data = _json_data[_owl_index];
+
+                    $('.ali-owl--title').text(_data.title);
+                    $('.ali-owl--sub-title').text(_data.sub_title);
+                    $('.ali-owl--description').text(_data.description);
+
+                    _buttons.each(function(index, el) {
+                        $(el).removeClass('active');
+                        $(_buttons[_owl_index]).addClass('active');
+                    });
+                })
+            }
+        })
+    </script>
 
     <!-- SCRIPT PAGE -->
     <!-- /SCRIPT PAGE -->

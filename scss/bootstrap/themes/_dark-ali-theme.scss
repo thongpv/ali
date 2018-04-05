@@ -1,6 +1,5 @@
-@import "../mixins";
 @import "dark-ali-theme/variable";
-@import "dark-ali-theme/mixin";
+@import "mixins";
 @import "dark-ali-theme/utilities";
 @import "dark-ali-theme/button";
 
@@ -11,8 +10,11 @@
 @import "dark-ali-theme/input";
 @import "dark-ali-theme/rating";
 @import "dark-ali-theme/icon";
+@import "dark-ali-theme/div-table";
+@import "dark-ali-theme/table";
+@import "dark-ali-theme/pagination";
+@import "dark-ali-theme/owl-carousel";
 
 // Object
 @import "dark-ali-theme/media";
-
 

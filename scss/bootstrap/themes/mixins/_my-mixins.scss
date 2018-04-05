@@ -22,10 +22,10 @@
 		box-shadow: $top $left $blur $color;
 	}
 }
-@mixin text-overflow($line) {
+@mixin my-text-overflow() {
 	display: block;
 	display: -webkit-box;
-	-webkit-line-clamp: $line;
+	// -webkit-line-clamp: ;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -86,4 +86,11 @@
 	cursor: auto;
 	white-space: pre-wrap;
 	word-wrap: break-word;
+}
+
+@mixin fix-translate() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) !important;
 }

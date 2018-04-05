@@ -12,7 +12,9 @@
 	.text-align-md-c { text-align: center !important; }
 	.text-align-md- { text-align: inherit !important; }
 	.hidden-md-down {display: none !important;}
-
+	
+	.table-responsive {overflow-x: auto !important;}
+	
 	.main-header {
 		max-height: 140px !important;
 
@@ -43,6 +45,11 @@
 
 	.navbar-fixed div.content-wrapper {
 		padding-top: 170px;
+	}
+
+	.table-ali-custom tr td p.table-note {
+		-webkit-line-clamp: 1;
+	    display: block;
 	}
 }
 

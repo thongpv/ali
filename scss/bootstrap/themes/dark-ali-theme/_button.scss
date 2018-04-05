@@ -13,12 +13,15 @@
 		border: solid 1px #f63664;
 		background-color: $pink-color-hv;
 	}
+	
 
+	&.active, .open > &.dropdown-toggle,
 	&:active, &:focus, &:visited {
 		box-shadow: 0 0 0 3px #f6366578 !important;
 		background-color: #F63665 !important;
 		border: solid 1px #f63664 !important;
 	}
+
 }
 
 .btn-default {
@@ -61,6 +64,13 @@
 	}
 
 	&:active, &:focus, &:visited {
+		color: $white !important;
+		box-shadow: 0 0 0 3px #f6366578 !important;
+		background-color: #F63665 !important;
+		border: solid 1px #f63664 !important;
+	}
+
+	&.active {
 		color: $white !important;
 		box-shadow: 0 0 0 3px #f6366578 !important;
 		background-color: #F63665 !important;

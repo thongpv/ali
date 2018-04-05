@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?7695vs');
-  src:  url('fonts/icomoon.eot?7695vs#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?7695vs') format('truetype'),
-    url('fonts/icomoon.woff?7695vs') format('woff'),
-    url('fonts/icomoon.svg?7695vs#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?bcw0nv');
+  src:  url('fonts/icomoon.eot?bcw0nv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bcw0nv') format('truetype'),
+    url('fonts/icomoon.woff?bcw0nv') format('woff'),
+    url('fonts/icomoon.svg?bcw0nv#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -274,12 +274,12 @@
 }
 .icon-icon_notification .path2:before {
   content: "\e93f";
-  margin-left: -0.9130859375em;
+  margin-left: -1em;
   color: rgb(255, 192, 106);
 }
 .icon-icon_notification .path3:before {
   content: "\e940";
-  margin-left: -0.9130859375em;
+  margin-left: -1em;
   color: none;
 }
 .icon-icon_notification-1 .path1:before {
@@ -288,12 +288,12 @@
 }
 .icon-icon_notification-1 .path2:before {
   content: "\e942";
-  margin-left: -0.9130859375em;
+  margin-left: -1em;
   color: rgb(255, 192, 106);
 }
 .icon-icon_notification-1 .path3:before {
   content: "\e943";
-  margin-left: -0.9130859375em;
+  margin-left: -1em;
   color: none;
 }
 .icon-icon_process:before {
@@ -390,17 +390,17 @@
 }
 .icon-tap .path2:before {
   content: "\e95b";
-  margin-left: -0.576171875em;
+  margin-left: -1em;
   color: rgb(30, 166, 198);
 }
 .icon-tap .path3:before {
   content: "\e95c";
-  margin-left: -0.576171875em;
+  margin-left: -1em;
   color: rgb(252, 208, 159);
 }
 .icon-tap .path4:before {
   content: "\e95d";
-  margin-left: -0.576171875em;
+  margin-left: -1em;
   color: rgb(226, 185, 145);
 }
 .icon-ic-3d-rotation-24px:before {
@@ -628,7 +628,7 @@
 }
 .icon-ic-battery-20-24px .path2:before {
   content: "\e9a8";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgba(0, 0, 0, 0.3);
 }
 .icon-ic-battery-30-24px .path1:before {
@@ -637,7 +637,7 @@
 }
 .icon-ic-battery-30-24px .path2:before {
   content: "\e9aa";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-battery-50-24px .path1:before {
@@ -646,7 +646,7 @@
 }
 .icon-ic-battery-50-24px .path2:before {
   content: "\e9ac";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-battery-60-24px .path1:before {
@@ -655,7 +655,7 @@
 }
 .icon-ic-battery-60-24px .path2:before {
   content: "\e9ae";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-battery-80-24px .path1:before {
@@ -664,7 +664,7 @@
 }
 .icon-ic-battery-80-24px .path2:before {
   content: "\e9b0";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-battery-90-24px .path1:before {
@@ -673,7 +673,7 @@
 }
 .icon-ic-battery-90-24px .path2:before {
   content: "\e9b2";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-battery-alert-24px:before {
@@ -685,7 +685,7 @@
 }
 .icon-ic-battery-charging-20-24px .path2:before {
   content: "\e9b5";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgba(0, 0, 0, 0.3);
 }
 .icon-ic-battery-charging-30-24px .path1:before {
@@ -694,7 +694,7 @@
 }
 .icon-ic-battery-charging-30-24px .path2:before {
   content: "\e9b7";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-battery-charging-50-24px .path1:before {
@@ -703,7 +703,7 @@
 }
 .icon-ic-battery-charging-50-24px .path2:before {
   content: "\e9b9";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgba(0, 0, 0, 0.3);
 }
 .icon-ic-battery-charging-60-24px .path1:before {
@@ -712,7 +712,7 @@
 }
 .icon-ic-battery-charging-60-24px .path2:before {
   content: "\e9bb";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-battery-charging-80-24px .path1:before {
@@ -721,7 +721,7 @@
 }
 .icon-ic-battery-charging-80-24px .path2:before {
   content: "\e9bd";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-battery-charging-90-24px .path1:before {
@@ -730,7 +730,7 @@
 }
 .icon-ic-battery-charging-90-24px .path2:before {
   content: "\e9bf";
-  margin-left: -0.5em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-battery-charging-full-24px:before {
@@ -2221,7 +2221,7 @@
 }
 .icon-ic-network-wifi-24px .path2:before {
   content: "\ebab";
-  margin-left: -1.2587890625em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-new-releases-24px:before {
@@ -2907,7 +2907,7 @@
 }
 .icon-ic-signal-wifi-1-bar-24px .path2:before {
   content: "\ec87";
-  margin-left: -1.2587890625em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-1-bar-lock-24px .path1:before {
@@ -2916,13 +2916,13 @@
 }
 .icon-ic-signal-wifi-1-bar-lock-24px .path2:before {
   content: "\ec89";
-  margin-left: -1.2421875em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
   opacity: 0.3;
 }
 .icon-ic-signal-wifi-1-bar-lock-24px .path3:before {
   content: "\ec8a";
-  margin-left: -1.2421875em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-2-bar-24px .path1:before {
@@ -2931,7 +2931,7 @@
 }
 .icon-ic-signal-wifi-2-bar-24px .path2:before {
   content: "\ec8c";
-  margin-left: -1.2587890625em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-2-bar-lock-24px .path1:before {
@@ -2940,13 +2940,13 @@
 }
 .icon-ic-signal-wifi-2-bar-lock-24px .path2:before {
   content: "\ec8e";
-  margin-left: -1.2421875em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
   opacity: 0.3;
 }
 .icon-ic-signal-wifi-2-bar-lock-24px .path3:before {
   content: "\ec8f";
-  margin-left: -1.2421875em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-3-bar-24px .path1:before {
@@ -2955,7 +2955,7 @@
 }
 .icon-ic-signal-wifi-3-bar-24px .path2:before {
   content: "\ec91";
-  margin-left: -1.2587890625em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-3-bar-lock-24px .path1:before {
@@ -2965,7 +2965,7 @@
 }
 .icon-ic-signal-wifi-3-bar-lock-24px .path2:before {
   content: "\ec93";
-  margin-left: -1.2421875em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-4-bar-24px:before {
@@ -2983,7 +2983,7 @@
 }
 .icon-ic-signal-wifi-statusbar-1-bar-26x24px .path2:before {
   content: "\ec98";
-  margin-left: -1.2578125em;
+  margin-left: -1em;
   color: rgba(0, 0, 0, 0.3);
 }
 .icon-ic-signal-wifi-statusbar-2-bar-26x24px .path1:before {
@@ -2992,7 +2992,7 @@
 }
 .icon-ic-signal-wifi-statusbar-2-bar-26x24px .path2:before {
   content: "\ec9a";
-  margin-left: -1.2578125em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-statusbar-3-bar-26x24px .path1:before {
@@ -3001,7 +3001,7 @@
 }
 .icon-ic-signal-wifi-statusbar-3-bar-26x24px .path2:before {
   content: "\ec9c";
-  margin-left: -1.2578125em;
+  margin-left: -1em;
   color: rgba(0, 0, 0, 0.3);
 }
 .icon-ic-signal-wifi-statusbar-4-bar-26x24px:before {
@@ -3013,7 +3013,7 @@
 }
 .icon-ic-signal-wifi-statusbar-connected-no-internet-1-26x24px .path2:before {
   content: "\ec9f";
-  margin-left: -1.2587890625em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-statusbar-connected-no-internet-26x24px .path1:before {
@@ -3022,7 +3022,7 @@
 }
 .icon-ic-signal-wifi-statusbar-connected-no-internet-26x24px .path2:before {
   content: "\eca1";
-  margin-left: -1.2587890625em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-statusbar-connected-no-internet-2-26x24px .path1:before {
@@ -3031,7 +3031,7 @@
 }
 .icon-ic-signal-wifi-statusbar-connected-no-internet-2-26x24px .path2:before {
   content: "\eca3";
-  margin-left: -1.2587890625em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-statusbar-connected-no-internet-3-26x24px .path1:before {
@@ -3040,7 +3040,7 @@
 }
 .icon-ic-signal-wifi-statusbar-connected-no-internet-3-26x24px .path2:before {
   content: "\eca5";
-  margin-left: -1.2587890625em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-statusbar-connected-no-internet-4-26x24px:before {
@@ -3052,7 +3052,7 @@
 }
 .icon-ic-signal-wifi-statusbar-not-connected-26x24px .path2:before {
   content: "\eca8";
-  margin-left: -1.2578125em;
+  margin-left: -1em;
   color: rgb(0, 0, 0);
 }
 .icon-ic-signal-wifi-statusbar-null-26x24px:before {
@@ -3572,4 +3572,10 @@
 .icon-favorites:before {
   content: "\ed53";
   color: #fff;
+}
+.icon-left-arrow:before {
+  content: "\ed54";
+}
+.icon-arrownext:before {
+  content: "\ed55";
 }

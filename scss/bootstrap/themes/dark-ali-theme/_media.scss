@@ -1,10 +1,6 @@
 .media {
 	.badge-verify {
 		margin-left: 18px;	
-
-		img {
-			vertical-align: initial; 
-		}
 	}
 
 	.media-left {
@@ -40,7 +36,8 @@
 		}
 
 		.media-body_rating {
-			.media_rating-box {
+			img {
+				vertical-align: initial; 
 			}
 		}
 	}

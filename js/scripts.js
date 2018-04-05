@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 	// FUNCTION
 	toggleMenuMobile();
+	tableAliCustom();
 });
 
 function backToTop() {
@@ -46,5 +47,16 @@ function toggleMenuMobile() {
 			
 			$('.blind-wall-menu').toggleClass('open');
 		}
+	});
+}
+
+
+function tableAliCustom() {
+	$('.table-ali-custom .row-select').on('change', function() {
+		if( $(this).is(":checked") ) {
+			$(this).parent().parent().parent().addClass('row-selected');
+		}
+		else
+			$(this).parent().parent().parent().removeClass('row-selected');
 	});
 }
