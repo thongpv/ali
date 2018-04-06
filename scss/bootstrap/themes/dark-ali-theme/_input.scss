@@ -12,12 +12,47 @@ textarea.form-control {
 	padding: 0 20px;
 	min-height: 40px;
 	font-size: 15px;
-	border-color: #E8E9EC;
+	border-color: $border-solid-color;
+	@include border-radius($border-radius-input);
 
 	&:focus {
 		background-color: #fff;
 		border-color: #80bdff;
 		outline: 0;
 		box-shadow: $form-control-box-shadow;
+	}
+}
+
+.input-group {
+	&--search {
+		button {
+			height: 40px;
+			background-color: #fff;
+			border: solid 1px $border-solid-color !important;
+
+			span::before {
+				color: #BCBCCB;
+			}
+		}
+	}
+
+	&--left {
+		button {
+			border-right: 0 !important;
+			
+			&:active, &:focus {
+				border-right: 0 !important;
+			}
+		}
+	}
+
+	&--right {
+		// border-left: 0 !important;
+		
+		// button {
+		// 	&:active, &:focus {
+		// 		border-left: 0 !important;
+		// 	}
+		// }
 	}
 }

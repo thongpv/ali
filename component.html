@@ -82,6 +82,15 @@
     <link rel="stylesheet" href="sources/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="sources/owl-carousel/css/owl.theme.default.min.css">
 
+    <!-- bootstrap-colorpicker -->
+    <link rel="stylesheet" href="sources/bootstrap-colorpicker/bootstrap-colorpicker.min.css">
+    
+    <!-- tagsinput -->
+    <link rel="stylesheet" href="sources/tagsinput/jquery.tagsinput.min.css">
+
+    <!-- toastr -->
+    <link rel="stylesheet" href="sources/toastr/toastr.min.css">
+
     <!--[if IE]>
     <link rel="stylesheet" type="text/css" href="css/all-ie-only.css">
     <![endif]-->
@@ -125,10 +134,39 @@
                 <button class="btn btn-default btn-hvr-pink">Default Hvr Pink</button>
                 <button class="btn btn-primary">Primary</button>
                 <button class="btn btn-pink">+3</button>
+
+                <p># Button tag < a></p>
+                <a href="#" class="btn btn-default">Default</a>
+                <a href="#" class="btn btn-default btn-hvr-pink">Default Hvr Pink</a>
+                <a href="#" class="btn btn-primary">Primary</a>
+                <a href="#" class="btn btn-pink">+3</a>
                 
                 <!-- Checbox - Radio - Switch -->
                 <div class="clearfix"><br></div>
                 <h4 id="elForm"># Form</h4>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group input-group--search input-group--left">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default mar-0 bd-r-0" type="button"><span class="icon-ic-search-24px"></span></button>
+                            </span>
+                            <input type="text" class="form-control bd-l-0 pad-l-3" placeholder="Search for...">
+                        </div>
+                        <!-- /input-group -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="input-group input-group--search input-group--right">
+                            <input type="text" class="form-control bd-r-0" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default mar-0 bd-l-0" type="button"><span class="icon-ic-search-24px"></span></button>
+                            </span>
+                        </div>
+                        <!-- /input-group -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                </div>
+
                 <div class="row">
                     <div class="col-md-4">
                         <h5 id="elCheckbox">Checkbox</h5>
@@ -137,7 +175,7 @@
                             <span class="checkmark-ckb"></span>
                         </label>
 
-                        <label class="wrap-custom-box"> Two
+                        <label class="wrap-custom-box"> Two <span class="color-pink fw-bold">Item</span>
                             <input type="checkbox"> 
                             <span class="checkmark-ckb"></span>
                         </label>
@@ -155,7 +193,7 @@
                             <span class="checkmark-rdb"></span>
                         </label>
 
-                        <label class="wrap-custom-box"> Two
+                        <label class="wrap-custom-box"> Two <span class="color-pink fw-bold">Item</span>
                             <input name="radio" type="radio">
                             <span class="checkmark-rdb"></span>
                         </label>
@@ -174,22 +212,28 @@
                                 <span class="switch-label" data-on="On" data-off="Off"></span> 
                                 <span class="switch-handle"></span>
                             </label>
-                            Choosen 
+                            switch 
                         </label>
 
                         
                         <br>
-                        <label class="wrap-switch"> 
-                            <input type="checkbox" class="switch-input">
-                            <span class="switch-label" data-on="On" data-off="Off"></span> 
-                            <span class="switch-handle"></span>
+                        <label class="wrap-switch-text">
+                            <label class="wrap-switch"> 
+                                <input type="checkbox" class="switch-input">
+                                <span class="switch-label" data-on="On" data-off="Off"></span> 
+                                <span class="switch-handle"></span>
+                            </label>
+                            switch 
                         </label>
                         
                         <br>
-                        <label class="wrap-switch"> 
-                            <input type="checkbox" class="switch-input" disabled="disabled">
-                            <span class="switch-label" data-on="On" data-off="Off"></span> 
-                            <span class="switch-handle"></span>
+                        <label class="wrap-switch-text">
+                            <label class="wrap-switch"> 
+                                <input type="checkbox" class="switch-input" disabled="disabled">
+                                <span class="switch-label" data-on="On" data-off="Off"></span> 
+                                <span class="switch-handle"></span>
+                            </label>
+                            <span class="fw-bold color-pink">switch</span> 
                         </label>
                     </div>
                 </div>
@@ -904,7 +948,7 @@
                 
                 <hr>
                 <br><br>
-                # Icon
+                # Icon status
                 <br>
                 <span class="icon-ic-notifications-24px has-notif  p-relative"></span> has-notif - 
                 <span class="icon-ic-notifications-24px has-notif has-notif--danger  p-relative"></span> has-notif--danger - 
@@ -1027,6 +1071,109 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr class="row-selected">
+                                <td class="text-center">
+                                    <label class="wrap-custom-box">
+                                        <input type="checkbox" class="row-select" checked="checked">
+                                        <span class="checkmark-ckb"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="http://via.placeholder.com/50x50" class="media-object img-rounded mar-b-5 img-circle" style="width:50px">
+                                        </div>
+
+                                        <div class="media-body">
+                                            <h4 class="media-heading fz14 fw-bold p-realative">
+                                                <a href="#">Maximus Bernhard</a>
+                                            </h4>
+
+                                            <div class="media-left_location p-relative">
+                                                <img src="http://via.placeholder.com/20x13" alt="" class="mar-r-10">
+                                                <span class="fz13">Country Name</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-rating"><input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star icon-ic-star-24px" data-empty="ali-rating ali-rating--star icon-ic-star-border-24px" data-fractions="2"/></td>
+                                <td>
+                                    <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum culpa error cumque soluta, qui.</p>
+                                </td>
+                                <td>
+                                    <img src="http://via.placeholder.com/35x35" alt="" class="img-rounded">
+                                    <img src="http://via.placeholder.com/35x35" alt="" class="img-rounded">
+                                    
+                                    <div class="dropdown dropdown--right d-inline-block">
+                                        <button class="btn dropdown-toggle btn-primary fw-bold" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                            <span>+3</span>
+                                        </button>
+
+                                        <div class="dropdown-menu dropdown-menu--rdb dropdown-menu--top" aria-labelledby="dropdownMenu1">
+                                            <div class="drop-rdb_1">
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fugit saepe pariatur. Suscipit in, minus.</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary fw-bold">Appove</button>
+                                    <button class="btn btn-default btn-hvr-pink">
+                                        <span class="icon-ic-delete-forever-24px"></span>
+                                    </button>
+                                </td>
+                            </tr>
                             <tr>
                                 <td class="text-center">
                                     <label class="wrap-custom-box">
@@ -1054,75 +1201,284 @@
                                 </td>
                                 <td class="td-rating"><input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star icon-ic-star-24px" data-empty="ali-rating ali-rating--star icon-ic-star-border-24px" data-fractions="2"/></td>
                                 <td>
-                                    <p class="fz11 text-over-3 mr0 pad-r-10 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum culpa error cumque soluta, qui.</p>
+                                    <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum culpa error cumque soluta, qui.</p>
                                 </td>
                                 <td>
                                     <img src="http://via.placeholder.com/35x35" alt="" class="img-rounded">
                                     <img src="http://via.placeholder.com/35x35" alt="" class="img-rounded">
-                                    <div class="dropdown d-inline-block">
-                                    <button class="btn dropdown-toggle btn-primary fw-bold" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                        <span>+3</span>
-                                    </button>
+                                    
+                                    <div class="dropdown dropdown--right d-inline-block">
+                                        <button class="btn dropdown-toggle btn-primary fw-bold" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                            <span>+3</span>
+                                        </button>
 
-                                    <div class="dropdown-menu dropdown-menu--rdb dropdown-menu--top" aria-labelledby="dropdownMenu1">
-                                        <div class="drop-rdb_1">
-                                            <label>
-                                                <input type="radio" name="rdb">
-                                                <img src="http://via.placeholder.com/22x22" alt="">
-                                            </label>
+                                        <div class="dropdown-menu dropdown-menu--rdb dropdown-menu--top" aria-labelledby="dropdownMenu1">
+                                            <div class="drop-rdb_1">
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
 
-                                            <label>
-                                                <input type="radio" name="rdb">
-                                                <img src="http://via.placeholder.com/22x22" alt="">
-                                            </label>
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
 
-                                            <label>
-                                                <input type="radio" name="rdb">
-                                                <img src="http://via.placeholder.com/22x22" alt="">
-                                            </label>
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
 
-                                            <label>
-                                                <input type="radio" name="rdb">
-                                                <img src="http://via.placeholder.com/22x22" alt="">
-                                            </label>
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
 
-                                            <label>
-                                                <input type="radio" name="rdb">
-                                                <img src="http://via.placeholder.com/22x22" alt="">
-                                            </label>
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
 
-                                            <label>
-                                                <input type="radio" name="rdb">
-                                                <img src="http://via.placeholder.com/22x22" alt="">
-                                            </label>
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
 
-                                            <label>
-                                                <input type="radio" name="rdb">
-                                                <img src="http://via.placeholder.com/22x22" alt="">
-                                            </label>
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
 
-                                            <label>
-                                                <input type="radio" name="rdb">
-                                                <img src="http://via.placeholder.com/22x22" alt="">
-                                            </label>
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
 
-                                            <label>
-                                                <input type="radio" name="rdb">
-                                                <img src="http://via.placeholder.com/22x22" alt="">
-                                            </label>
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
 
-                                            <label>
-                                                <input type="radio" name="rdb">
-                                                <img src="http://via.placeholder.com/22x22" alt="">
-                                            </label>
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 </td>
                                 <td>
-                                    <p class="fz11 text-over-3 mr0 pad-r-10 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fugit saepe pariatur. Suscipit in, minus.</p>
+                                    <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fugit saepe pariatur. Suscipit in, minus.</p>
                                 </td>
+                                <td>
+                                    <button class="btn btn-primary fw-bold">Appove</button>
+                                    <button class="btn btn-default btn-hvr-pink">
+                                        <span class="icon-ic-delete-forever-24px"></span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
                                 <td class="text-center">
+                                    <label class="wrap-custom-box">
+                                        <input type="checkbox" class="row-select">
+                                        <span class="checkmark-ckb"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="http://via.placeholder.com/50x50" class="media-object img-rounded mar-b-5 img-circle" style="width:50px">
+                                        </div>
+
+                                        <div class="media-body">
+                                            <h4 class="media-heading fz14 fw-bold p-realative">
+                                                <a href="#">Maximus Bernhard</a>
+                                            </h4>
+
+                                            <div class="media-left_location p-relative">
+                                                <img src="http://via.placeholder.com/20x13" alt="" class="mar-r-10">
+                                                <span class="fz13">Country Name</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-rating"><input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star icon-ic-star-24px" data-empty="ali-rating ali-rating--star icon-ic-star-border-24px" data-fractions="2"/></td>
+                                <td>
+                                    <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum culpa error cumque soluta, qui.</p>
+                                </td>
+                                <td>
+                                    <img src="http://via.placeholder.com/35x35" alt="" class="img-rounded">
+                                    <img src="http://via.placeholder.com/35x35" alt="" class="img-rounded">
+                                    
+                                    <div class="dropdown dropdown--right d-inline-block">
+                                        <button class="btn dropdown-toggle btn-primary fw-bold" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                            <span>+3</span>
+                                        </button>
+
+                                        <div class="dropdown-menu dropdown-menu--rdb dropdown-menu--top" aria-labelledby="dropdownMenu1">
+                                            <div class="drop-rdb_1">
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fugit saepe pariatur. Suscipit in, minus.</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary fw-bold">Appove</button>
+                                    <button class="btn btn-default btn-hvr-pink">
+                                        <span class="icon-ic-delete-forever-24px"></span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center">
+                                    <label class="wrap-custom-box">
+                                        <input type="checkbox" class="row-select">
+                                        <span class="checkmark-ckb"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="http://via.placeholder.com/50x50" class="media-object img-rounded mar-b-5 img-circle" style="width:50px">
+                                        </div>
+
+                                        <div class="media-body">
+                                            <h4 class="media-heading fz14 fw-bold p-realative">
+                                                <a href="#">Maximus Bernhard</a>
+                                            </h4>
+
+                                            <div class="media-left_location p-relative">
+                                                <img src="http://via.placeholder.com/20x13" alt="" class="mar-r-10">
+                                                <span class="fz13">Country Name</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-rating"><input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star icon-ic-star-24px" data-empty="ali-rating ali-rating--star icon-ic-star-border-24px" data-fractions="2"/></td>
+                                <td>
+                                    <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum culpa error cumque soluta, qui.</p>
+                                </td>
+                                <td>
+                                    <img src="http://via.placeholder.com/35x35" alt="" class="img-rounded">
+                                    <img src="http://via.placeholder.com/35x35" alt="" class="img-rounded">
+                                    
+                                    <div class="dropdown dropdown--right d-inline-block">
+                                        <button class="btn dropdown-toggle btn-primary fw-bold" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                            <span>+3</span>
+                                        </button>
+
+                                        <div class="dropdown-menu dropdown-menu--rdb dropdown-menu--top" aria-labelledby="dropdownMenu1">
+                                            <div class="drop-rdb_1">
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" name="rdb">
+                                                    <img src="http://via.placeholder.com/22x22" alt="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fugit saepe pariatur. Suscipit in, minus.</p>
+                                </td>
+                                <td>
                                     <button class="btn btn-primary fw-bold">Appove</button>
                                     <button class="btn btn-default btn-hvr-pink">
                                         <span class="icon-ic-delete-forever-24px"></span>
@@ -1130,6 +1486,69 @@
                                 </td>
                             </tr>
                         </tbody>
+                    </table>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover table-ali-custom table-mid table-pad-25" id="table-select-all">
+                        <thead>
+                            <tr>
+                                <th>Products Name</th>
+                                <th width="25%">Reviews</th>
+                                <th width="15%">Bulk Settings</th>
+                                <th width="20%">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="http://via.placeholder.com/50x50" class="media-object img-rounded mar-b-5 img-circle" style="width:50px">
+                                        </div>
+
+                                        <div class="media-body">
+                                            <h4 class="media-heading fz14 fw-bold p-realative">
+                                                <a href="#">Maximus Bernhard</a>
+                                            </h4>
+
+                                            <div class="media-left_location p-relative">
+                                                <img src="http://via.placeholder.com/20x13" alt="" class="mar-r-10">
+                                                <span class="fz13">Country Name</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-rating"><input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star icon-ic-star-24px" data-empty="ali-rating ali-rating--star icon-ic-star-border-24px" data-fractions="2"/></td>
+                                <td>
+                                    <div class="btn-group action-group">
+                                        <button type="button" class="btn btn-primary btn-hvr-pink dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon-ic-open-in-browser-24px"></span> 
+                                        </button>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Publish</a></li>
+                                            <li><a href="#">Unpublish</a></li>
+                                            <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary fw-bold">+ Add Reviews</button>
+                                    <button class="btn btn-default btn-hvr-pink">
+                                        <span class="icon-ic-visibility-24px"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th>Products Name</th>
+                                <th width="25%">Reviews</th>
+                                <th width="15%">Bulk Settings</th>
+                                <th width="20%">Action</th>
+                            </tr>
+                        </thead>
                     </table>
                 </div>
 
@@ -1164,10 +1583,10 @@
                     <div class="col-md-6">
                         <div class="wrapper-owl">
                             <div class="owl-carousel owl-theme ali-owl ali-owl--style-1">
-                                <div class="item"><img src="http://via.placeholder.com/400x250" alt=""></div>
-                                <div class="item"><img src="http://via.placeholder.com/400x250" alt=""></div>
-                                <div class="item"><img src="http://via.placeholder.com/400x250" alt=""></div>
-                                <div class="item"><img src="http://via.placeholder.com/400x250" alt=""></div>
+                                <div class="item"><img src="http://via.placeholder.com/400x251" alt=""></div>
+                                <div class="item"><img src="http://via.placeholder.com/400x252" alt=""></div>
+                                <div class="item"><img src="http://via.placeholder.com/400x253" alt=""></div>
+                                <div class="item"><img src="http://via.placeholder.com/400x254" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -1219,21 +1638,93 @@
                     });
                 })</pre>
                 </code>
-    
+
+                <!-- bootstrap-colorpicker -->
+                <br><br><p># Bootstrap Colorpicker</p>
+                <div class="form-group">
+                    <div class="input-group colorpicker-init bd-0">
+                        <span class="input-group-addon bd-r-0"><i></i></span>
+                        <input type="text" class="form-control pad-l-0 bd-l-0" value="#F63665"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="input-group colorpicker-init bd-0">
+                                <input type="text" class="form-control bd-r-0" value="#F63665"/>
+                                <span class="input-group-addon bd-l-0"><i></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <code><p>JS</p><pre>$(function () { $('.colorpicker-init').colorpicker(); });</pre></code>
+
+                <!-- tagsinput -->
+                <br/><br/><p># Tagsinput</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" class="tagsinput form-control" value="social, adverts, sales" />
+                    </div>
+                </div>
     
             </div> <!-- Container -->
         </div>
     </div>
-    
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="sources/bootstrap-3/js/bootstrap.min.js"></script>
     <script src="sources/animate/wow.min.js"></script>
 
     <!-- Rating -->
     <script src="sources/rating/bootstrap-rating.min.js"></script>
-    
+
     <!-- owl-carousel -->
     <script src="sources/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!-- bootstrap-colorpicker -->
+    <script src="sources/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+    
+    <!-- tagsinput -->
+    <script src="sources/tagsinput/jquery.tagsinput.js"></script>
+
+    <!-- toastr -->
+    <script src="sources/toastr/toastr.min.js"></script>
+    
+    <!-- tagsinput -->
+    <script type="text/javascript">
+        $('.tagsinput').tagsInput({
+            defaultText: 'keywords'
+        });
+    </script>
+
+    <!-- Rating -->
+    <script>
+        $(function() {
+            $('.rating-tooltip-manual').rating({
+                extendSymbol: function() {
+                    var title;
+                    $(this).tooltip({
+                        container: 'body',
+                        placement: 'top',
+                        trigger: 'manual',
+                        title: function() {
+                            return title;
+                        }
+                    });
+                    $(this).on('rating.rateenter', function(e, rate) {
+                        title = rate;
+                        $(this).tooltip('show');
+                    })
+                    .on('rating.rateleave', function() {
+                        $(this).tooltip('hide');
+                    });
+                }
+            });
+        }); 
+    </script>
+    
+    <!-- owl-carousel -->
     <script>
         $(document).ready(function() {
             aliSlideOwlStep();
@@ -1260,7 +1751,6 @@
                         "description": "Douglas Extension"
                     }
                 ];
-
                 var owl = $('.owl-carousel');
                 owl.on('initialized.owl.carousel', function(event){ 
                     var _count_item = event.item.count;
@@ -1273,7 +1763,9 @@
                     }
 
                     $('.ali-owl-btn button').on('click', function(ele) {
-                    })
+                        var _btn_index = $(this).attr('owl-index');
+                        owl.trigger("to.owl.carousel", [_btn_index, 300, true]);
+                    });
                 });
                 owl.owlCarousel({
                     items: 1,
@@ -1302,6 +1794,37 @@
                 })
             }
         })
+    </script>
+
+    <!-- bootstrap-colorpicker -->
+    <script type="text/javascript">
+        $(function () { $('.colorpicker-init').colorpicker(); });
+    </script>
+
+    <!-- toastr -->
+    <script type="text/javascript">
+        
+        toastr.options = {
+            "closeButton": true,
+            "debug": true,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-bottom-left",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+        toastr["success"]("Load success!");
+        toastr["warning"]("<b class='fz18'>Notifications</b><p class='mar-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>");
+        toastr["info"]("Load success!");
+        toastr["error"]("Load success!");
     </script>
 
     <!-- SCRIPT PAGE -->
@@ -1347,30 +1870,5 @@
         });
     </script>
     <!-- /ADD ALT - SEO -->
-
-    <script>
-        $(function() {
-            $('.rating-tooltip-manual').rating({
-                extendSymbol: function() {
-                    var title;
-                    $(this).tooltip({
-                        container: 'body',
-                        placement: 'top',
-                        trigger: 'manual',
-                        title: function() {
-                            return title;
-                        }
-                    });
-                    $(this).on('rating.rateenter', function(e, rate) {
-                        title = rate;
-                        $(this).tooltip('show');
-                    })
-                    .on('rating.rateleave', function() {
-                        $(this).tooltip('hide');
-                    });
-                }
-            });
-        }); 
-</script>
 </body>
 </html>

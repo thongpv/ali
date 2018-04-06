@@ -2,40 +2,37 @@
 	outline: none !important;
 	margin: 3px;
 	min-height: 35px;
+	box-shadow: 0 0 0 0px transparent;
 	@include transition(.15s);
-	@include border-radius(4px);
+	@include border-radius($border-radius-button);
 }
 
 .btn-primary {
 	background-color: $btn-primary-bg;
 
-	&:hover {
-		border: solid 1px #f63664;
-		background-color: $pink-color-hv;
-	}
-	
-
 	&.active, .open > &.dropdown-toggle,
-	&:active, &:focus, &:visited {
+	&:active, &:focus {
 		box-shadow: 0 0 0 3px #f6366578 !important;
 		background-color: #F63665 !important;
 		border: solid 1px #f63664 !important;
 	}
 
+	&:hover {
+		border: solid 1px #f63664;
+		background-color: $pink-color-hv;
+	}
 }
 
 .btn-default {
-	background-color: $btn-default-bg;
 	border: solid 1px $btn-default-border;
 	
-	&:hover {
-		background-color: #b1bfce36;
+	&:active, &:focus {
+		box-shadow: 0 0 0 3px #f1f1f1 !important;
+		border: solid 1px $btn-default-border !important;
 	}
 
-	&:active, &:focus, &:visited {
-		box-shadow: 0 0 0 3px #f1f1f1 !important;
-		background-color: #e2e6ea !important;
-		border: solid 1px $btn-default-border !important;
+	&:hover {
+		background-color: #b1bfce36;
 	}
 }
 
@@ -44,15 +41,15 @@
 	color: $btn-pink-color !important;
 	border: solid 1px $pink-color;
 
-	&:hover {
-		border: solid 1px #f63664;
-		background-color: $pink-color-hv;
-	}
-
-	&:active, &:focus, &:visited {
+	&:active, &:focus {
 		box-shadow: 0 0 0 3px #f6366578 !important;
 		background-color: #F63665 !important;
 		border: solid 1px #f63664 !important;
+	}
+
+	&:hover {
+		border: solid 1px #f63664;
+		background-color: $pink-color-hv;
 	}
 }
 
@@ -63,7 +60,7 @@
 		background-color: $pink-color-hv;
 	}
 
-	&:active, &:focus, &:visited {
+	&:active, &:focus {
 		color: $white !important;
 		box-shadow: 0 0 0 3px #f6366578 !important;
 		background-color: #F63665 !important;

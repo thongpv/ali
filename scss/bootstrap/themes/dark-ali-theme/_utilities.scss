@@ -1,4 +1,5 @@
 .rounded {@include border-radius(3px);}
+.border-rounded{@include border-radius(50%);}
 
 // position
 .p-relative {position: relative !important;}
@@ -12,6 +13,7 @@
 .fz11 {font-size: 11px;}
 .fz13 {font-size: 13px;}
 .fz14 {font-size: 14px;}
+.fz18 {font-size: 18px;}
 
 // font-weight
 .fw-bold {font-weight: 700;}
@@ -24,9 +26,16 @@
 .mar-b-10 {margin-bottom: 10px !important;}
 .mar-r-10 {margin-right: 10px !important;}
 .mar-r-15 {margin-right: 15px !important;}
-.mar-0, .mr0 {margin: 0;}
+.mar-0, .mr0 {margin: 0 !important;}
 
-.pad-r-10 {padding-right: 10px;}
+.pad-r-10 {padding-right: 10px !important;}
+.pad-l-0 {padding-left: 0px !important;}
+.pad-l-3 {padding-left: 3px !important;}
+
+// border
+.bd-0 {border: 0 !important};
+.bd-r-0 {border-right: 0 !important};
+.bd-l-0 {border-left: 0 !important};
 
 // light-height
 .lh13 {light-height: 1.3;}

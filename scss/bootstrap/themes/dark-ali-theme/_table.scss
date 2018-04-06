@@ -1,4 +1,13 @@
 .table-responsive {overflow: inherit;}
+
+.wrapper-tbl-action {
+	padding: 25px 0;
+
+	.action-group {
+		margin-left: 70px;
+	}
+}
+
 .table-ali-custom {
 	border: solid 1px #D7DAE2;
 	background-color: #fff;
@@ -9,18 +18,14 @@
 
 	thead > tr > th {
 		border: none;
-		padding: 20px 0 !important;
-	}
-
-	.wrap-custom-box input.row-select:checked {
-
+		padding: 20px 8px !important;
 	}
 
 	tr {
 	    border-top: solid 1px #D7DAE2;
 
 		td {
-		    padding: 20px 0 !important;
+		    padding: 20px 8px !important;
 		    border-top: none !important;
 
 		    p.table-note {
@@ -40,41 +45,76 @@
 				margin: 0;
 			}
 		}
-
-		.td-rating {
-			white-space: nowrap;
-		}
 	}
 
-	.row-selected {
-		box-shadow: inset 0px 0px 0px 1px $purple;
+	tr.row-selected {
+	    box-shadow: inset 0px 0px 0px 1px $purple, inset 5px 0px 0px 1px #F63665;
 		border-top: solid 1px $purple;
-		border-left: solid 5px $purple;
 	}
 
-	// dropdown button
-	.dropdown .dropdown-menu--rdb, 
-	.dropup .dropdown-menu--rdb {
-		left: 100%;
-		top: 0;
-		margin-top: -3px;
-		transform: translate(5%, 0%);
-
-		label {
-		    margin: 0 1px;
-			@include size(35px, 35px);
-
-			&:nth-child(7n+0) {
-			    clear: inherit;
-			}
-		}
+	tr.row-selected + tr.row-selected {
+		border-top: solid 1px #fff;
 	}
 }
 
-.wrapper-tbl-action {
-	padding: 25px 0;
+.table > tbody > tr > td:first-child,
+.table > thead > tr:first-child > th:first-child {
+	padding-left: 25px !important;
+}
 
-	.action-group {
-		margin-left: 70px;
+.table > tbody > tr > td:last-child,
+.table > thead > tr:first-child > th:last-child {
+	padding-right: 25px !important;
+}
+
+.table-ali-custom {
+    p.table-note {
+    	max-width: 250px;
+    }
+
+	label.wrap-custom-box {
+		margin-bottom: 0;
+
+		[class^="checkmark-"] {
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	button {
+		margin: 0;
+	}
+}
+
+// Rating
+.table-ali-custom {
+	.td-rating {
+		white-space: nowrap;
+	}
+}
+
+// Dropdown button
+.table-ali-custom {
+	.dropdown-menu {
+		margin-top: 8px;
+	}
+
+	.dropdown.dropdown--right {
+		.dropdown-menu--rdb, 
+		.dropdown-menu--rdb {
+			left: 100%;
+			top: 0;
+			margin-top: -3px;
+			transform: translate(5%, 0%);
+
+			label {
+			    margin: 0 1px;
+				@include size(35px, 35px);
+
+				&:nth-child(7n+0) {
+				    clear: inherit;
+				}
+			}
+		}
 	}
 }
