@@ -1,6 +1,9 @@
 .wrapper-price {
 	max-width: 290px;
 	margin-bottom: 40px;
+	border-bottom: solid 3px transparent;
+	border: solid 1px #d2d2d2;
+	border-top: 0;
 
 	> img {
 		max-width: 100%;

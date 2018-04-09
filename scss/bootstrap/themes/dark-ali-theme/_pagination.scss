@@ -1,10 +1,13 @@
 nav .ali-pagination {
+	margin-right: -5px;
+	margin-left: -5px;
+	
 	a {
 		margin: 5px;
 		padding: 7px 13px;
 		border-radius: 4px;
 		color: #4D4F5C;
-		border: solid 1px #E8E9EC;
+		border: solid 1px $border-solid-color;
 	}
 
 	li.active a {

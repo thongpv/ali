@@ -70,7 +70,7 @@
     
     <link rel="stylesheet" href="css/app.bootstrap.css">
     <link rel="stylesheet" href="sources/animate/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
 
     <!-- font-ali-awesome -->
     <link rel="stylesheet" href="sources/font-ali-awesome/font-ali-awesome.css">
@@ -384,11 +384,10 @@
                     <div id="treeview_1" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ul>
-                                <li><a href="dashboard-manage-reviews-page.html" class="ico-hourglass">Dashboard</a></li>
                                 <li><a href="#" class="ico-hourglass">Pending Reviews</a></li>
-                                <li><a href="approve-reviews-page.html" class="ico-approve-review">Approve Reviews</a></li>
-                                <li><a href="create-reviews-page.html" class="ico-create-review">Create Review Page</a></li>
-                                <li><a href="default-reviews-page.html" class="ico-default-review">Default Reviews</a></li>
+                                <li><a href="approve-reviews.html" class="ico-approve-review">Approve Reviews</a></li>
+                                <li><a href="#" class="ico-create-review">Create Review Page</a></li>
+                                <li><a href="#" class="ico-default-review">Default Reviews</a></li>
                             </ul>
                         </div>
                     </div>
@@ -399,7 +398,6 @@
                     <div id="treeview_2" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ul>
-                                <li><a href="dashboard-general-setting-page.html" class="ico-input-form">Dashboard</a></li>
                                 <li><a href="#" class="ico-input-form">Input Form Edit</a></li>
                                 <li class="active"><a href="#" class="ico-comment-form">Comment Form Edit</a></li>
                             </ul>
@@ -409,11 +407,9 @@
 
                 <li class="header">MAIN NAVIGATION</li>
                 <li><a href="#" class="ico-app-intergration">Apps Intergration</a></li>
-                <li><a href="getting-started.html" class="ico-get-star">Get starts</a></li>
+                <li><a href="#" class="ico-get-star">Get starts</a></li>
                 <li class="divide"></li>
-                <li><a href="upgrade-version-page.html" class="ico-upgrade-version">Upgrade version</a></li>
-                <li class="header">PAGE ORDER</li>
-                <li><a href="welcome-page.html" class="ico-app-intergration">Welcome</a></li>
+                <li><a href="#" class="ico-upgrade-version">Upgrade version</a></li>
             </ul>
         </div>
     </aside>
@@ -422,9 +418,33 @@
     <!-- CONTENT WRAPPER -->
     <div class="wrapper-content">
         <div class="clearfix"></div>
-        <div class="wrapper-space">
-                hello
+        <!-- Content -->
+        <div class="wrapper-space wrapper-space--45 bg-white create-reviews-page">
+            <h1 class="ali-title-normal color-dark-blue mar-t-0 mar-b-15">Creating Reviews Page</h1>
+            <p class="ali-body-medium mar-b-30">Support to create a review page that can show entire reviews on the store in the same place:</p>
+            
+            <div class="row">
+                <div class="col-md-7">
+                    <form class="mar-b-50">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Your page link">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-primary fw-bold">Add Page</button>
+                              </span>
+                        </div>
+                        <!-- /input-group -->
+                    </form>
+                </div>
+            </div>
+
+            <p class="ali-body-medium mar-b-30">Or paste the code below into the available page:</p>
+            <div class="row">
+                <div class="col-md-7">
+                    <textarea name="" rows="5" class="form-control vertical-resize"></textarea>
+                </div>
+            </div>
         </div>
+        <!-- END: Content -->
     </div>
     <!-- END: CONTENT WRAPPER -->
 
@@ -435,8 +455,8 @@
     <script src="sources/bootstrap-3/js/bootstrap.min.js"></script>
     <script src="sources/animate/wow.min.js"></script>
 
-	<!-- ============================= SCRIPT PAGE ============================= -->
-	<!-- =========================== END: SCRIPT PAGE ========================== -->
+	<!-- SCRIPT PAGE -->
+	<!-- /SCRIPT PAGE -->
 
     <script type="text/javascript" src="js/scripts.js"></script>
 	

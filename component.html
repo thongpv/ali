@@ -91,6 +91,9 @@
     <!-- toastr -->
     <link rel="stylesheet" href="sources/toastr/toastr.min.css">
 
+    <!-- select2 -->
+    <link rel="stylesheet" href="sources/select2/select2.min.css">
+
     <!--[if IE]>
     <link rel="stylesheet" type="text/css" href="css/all-ie-only.css">
     <![endif]-->
@@ -195,7 +198,12 @@
                 <div class="row">
                     <div class="col-md-4">
                         <h5 id="elCheckbox">Checkbox</h5>
-                        <label class="wrap-custom-box"> One
+                        <label class="wrap-custom-box">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark-ckb"></span>
+                        </label>
+
+                        <label class="wrap-custom-box"> one
                             <input type="checkbox" checked="checked">
                             <span class="checkmark-ckb"></span>
                         </label>
@@ -213,6 +221,12 @@
 
                     <div class="col-md-4">
                         <h5 id="elRadio">Radio</h5>
+
+                        <label class="wrap-custom-box"> 
+                            <input name="radio" type="radio" checked="checked">
+                            <span class="checkmark-rdb"></span>
+                        </label>
+
                         <label class="wrap-custom-box"> One
                             <input name="radio" type="radio" checked="checked">
                             <span class="checkmark-rdb"></span>
@@ -424,6 +438,14 @@
                 <form>
                     <div class="form-group">
                         <label for="select">Select</label>
+                        <select class="form-control" id="select" name="state">
+                            <option value="AL">lrem</option>
+                            <option value="WY">Lorem ipsum dolor sit amet.</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="select">Select 2</label>
                         <select class="select2 form-control" id="select" name="state">
                             <option value="AL">lrem</option>
                             <option value="WY">Lorem ipsum dolor sit amet.</option>
@@ -1916,6 +1938,9 @@
     <!-- toastr -->
     <script src="sources/toastr/toastr.min.js"></script>
 
+    <!-- select2 -->
+    <script src="sources/select2/select2.min.js"></script>
+
     <!-- Chart -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
     
@@ -2167,7 +2192,7 @@
             var maxHeight = Math.max.apply(null, heights);
             console.log(maxHeight);
 
-            $(".wrapper-price__content ul").css('height', maxHeight);
+            $(".wrapper-price__content ul").css('min-height', maxHeight);
         }); 
     </script>
 
@@ -2210,6 +2235,11 @@
             }
         });
         </script>
+
+    <script type="text/javascript">
+        // Select 2 Init
+        $('.select2').select2();
+    </script>
 
     <!-- /Microformat -->
 

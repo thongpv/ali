@@ -47,12 +47,28 @@ textarea.form-control {
 	}
 
 	&--right {
-		// border-left: 0 !important;
 		
-		// button {
-		// 	&:active, &:focus {
-		// 		border-left: 0 !important;
-		// 	}
-		// }
+	}
+
+	button {
+		height: 40px;
+		margin-top: -1px;
+		margin-bottom: -1px;
+	}
+}
+
+textarea {
+	&.no-resize {
+		resize: none;
+	}
+	
+	// Ngang
+	&.horizontal-resize {
+		resize: horizontal;
+	}
+	
+	// Dọc
+	&.vertical-resize {
+		resize: vertical;
 	}
 }

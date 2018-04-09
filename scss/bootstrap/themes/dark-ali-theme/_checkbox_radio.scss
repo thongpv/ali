@@ -1,8 +1,9 @@
-$tim-transition-rdb-ckb: .3s ;
+$time-transition-rdb-ckb: .3s ;
 .wrap-custom-box {
     display: block;
     position: relative;
     padding-left: 25px;
+    min-height: 20px;
     cursor: pointer;
     @include user-select(none);
     
@@ -13,8 +14,9 @@ $tim-transition-rdb-ckb: .3s ;
         left: 0;
         height: 20px;
         width: 20px;
-        background-color: #E7E8EA;
-        @include transition($tim-transition-rdb-ckb / 2);
+        // background-color: #E7E8EA;
+        background-color: #ccc;
+        @include transition($time-transition-rdb-ckb / 2);
         @include border-radius(3px);
     }
 
@@ -35,7 +37,7 @@ $tim-transition-rdb-ckb: .3s ;
 
     &:hover input[type="radio"] ~ .checkmark-ckb,
     &:hover input[type="checkbox"] ~ .checkmark-ckb {
-        background-color: #ccc;
+        background-color: #f6366447;
     }
     
     input[type="checkbox"]:checked ~ .checkmark-ckb {
@@ -67,7 +69,7 @@ $tim-transition-rdb-ckb: .3s ;
         position: absolute;
         opacity: 0;
         transform: translate(-50%, -50%);
-        @include transition($tim-transition-rdb-ckb);
+        @include transition($time-transition-rdb-ckb);
     }
 
     .checkmark-rdb:after {

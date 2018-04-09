@@ -10,11 +10,22 @@
 @media only screen and (max-width: 992px) { 
 	.text-align-md-r { text-align: right !important; }
 	.text-align-md-l { text-align: left !important; }
-	.text-align-md-c { text-align: center !important; }
+	.text-align-md-c, .text-center-md { text-align: center !important; }
 	.text-align-md- { text-align: inherit !important; }
 	.hidden-md-down {display: none !important;}
 	.table-responsive {overflow-x: auto !important;}
+
+	.mar-md-auto {margin: auto;}
 	
+	// .table-ali-custom tr td p.table-note {
+	// 	-webkit-line-clamp: 1;
+	//     display: block;
+	// }
+
+	.wrapper-price {
+		margin: auto;
+		margin-bottom: 40px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -23,11 +34,7 @@
 	.text-align-sm-c { text-align: center !important; }
 	.text-align-sm- { text-align: inherit !important; }
 	.hidden-sm-down {display: none !important;}
-
-	.wrapper-price {
-		margin: auto;
-		margin-bottom: 40px;
-	}
+	.mar-sm-auto {margin: auto;}
 }
 
 @media only screen and (max-width: 544px) { 

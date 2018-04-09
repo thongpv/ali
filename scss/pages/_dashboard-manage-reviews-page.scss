@@ -1,0 +1,38 @@
+.dashboard-manage-reviews-page {
+	.wrapper-tbl-action {
+		.input-group--search {
+			max-width: 280px;
+
+		    input[type="text"] {
+		    	min-height: 35px;
+		    	border-color: #D7DAE2;
+		    }
+
+		    button {
+
+		    	height: 35px;
+		    	border-color: #D7DAE2 !important;
+		    }
+
+
+		}
+
+		button.wid130 {
+	    	width: 130px !important;
+	    }
+	}
+
+	.table-ali-custom  {
+		thead > tr > th {
+			color: $dark-blue;
+		}
+
+		.media-body {
+		    vertical-align: middle;
+
+		    a {
+		    	color: #3B86FF;
+		    }
+		}
+	}
+}

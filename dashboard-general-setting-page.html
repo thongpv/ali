@@ -70,7 +70,7 @@
     
     <link rel="stylesheet" href="css/app.bootstrap.css">
     <link rel="stylesheet" href="sources/animate/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
 
     <!-- font-ali-awesome -->
     <link rel="stylesheet" href="sources/font-ali-awesome/font-ali-awesome.css">
@@ -80,6 +80,11 @@
 	<![endif]-->
 
 	<!-- CSS PAGE -->
+        <!-- select2 -->
+        <link rel="stylesheet" href="sources/select2/select2.min.css">
+
+        <!-- tagsinput -->
+        <link rel="stylesheet" href="sources/tagsinput/jquery.tagsinput.min.css">
 	<!-- /CSS PAGE -->
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -384,7 +389,6 @@
                     <div id="treeview_1" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ul>
-                                <li><a href="dashboard-manage-reviews-page.html" class="ico-hourglass">Dashboard</a></li>
                                 <li><a href="#" class="ico-hourglass">Pending Reviews</a></li>
                                 <li><a href="approve-reviews-page.html" class="ico-approve-review">Approve Reviews</a></li>
                                 <li><a href="create-reviews-page.html" class="ico-create-review">Create Review Page</a></li>
@@ -409,11 +413,9 @@
 
                 <li class="header">MAIN NAVIGATION</li>
                 <li><a href="#" class="ico-app-intergration">Apps Intergration</a></li>
-                <li><a href="getting-started.html" class="ico-get-star">Get starts</a></li>
+                <li><a href="#" class="ico-get-star">Get starts</a></li>
                 <li class="divide"></li>
-                <li><a href="upgrade-version-page.html" class="ico-upgrade-version">Upgrade version</a></li>
-                <li class="header">PAGE ORDER</li>
-                <li><a href="welcome-page.html" class="ico-app-intergration">Welcome</a></li>
+                <li><a href="#" class="ico-upgrade-version">Upgrade version</a></li>
             </ul>
         </div>
     </aside>
@@ -422,8 +424,104 @@
     <!-- CONTENT WRAPPER -->
     <div class="wrapper-content">
         <div class="clearfix"></div>
-        <div class="wrapper-space">
-                hello
+        <div class="wrapper-space wrapper-space--45 bg-white dashboard-general-setting-page">
+            <h2 class="ali-title-normal mar-t-0 mar-b-50 color-dark-blue">General Settings</h2>
+            <h3 class="color-dark-blue fz18 fw-bold mar-t-0 mar-b-15">1. Active review box</h3>
+            <div class="mar-b-40">
+                <label class="wrap-switch-text">
+                    <label class="wrap-switch"> 
+                        <input type="checkbox" class="switch-input" checked="checked">
+                        <span class="switch-label" data-on="On" data-off="Off"></span> 
+                        <span class="switch-handle"></span>
+                    </label>
+                </label>
+            </div>
+            <hr class="mar-b-35">
+            <h3 class="mar-t-0 mar-b-60 color-dark-blue fz18 fw-bold">2. Get review default settings.</h3>
+
+            <h4 class="color-dark-blue fz15 fw-bold mar-b-25">Reviews properties</h4>
+            <div class="row mar-b-25">
+                <div class="col-lg-3 col-sm-4 col-xs-6 mar-b-10">
+                    <label class="wrap-custom-box fw-light"> Only get <span class="fw-bold color-pink">4 stars reviews</span>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark-ckb"></span>
+                    </label>
+                </div>
+
+                <div class="col-lg-3 col-sm-4 col-xs-6 mar-b-10">
+                    <label class="wrap-custom-box fw-light"> Only get <span class="fw-bold color-pink">5 stars reviews</span>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark-ckb"></span>
+                    </label>
+                </div>
+
+                <div class="col-lg-3 col-sm-4 col-xs-6 mar-b-10">
+                    <label class="wrap-custom-box fw-light"> Only reivews <span class="fw-bold color-pink">with content</span>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark-ckb"></span>
+                    </label>
+                </div>
+            </div>
+
+            <h4 class="color-dark-blue fz15 fw-bold mar-b-25">Reviews with images</h4>
+            <div class="row mar-b-25">
+                <div class="col-lg-3 col-sm-4 col-xs-6 mar-b-10">
+                    <label class="wrap-custom-box fw-light"> Only reviews <span class="fw-bold color-pink">with picture</span>
+                        <input name="radio" type="radio" checked="checked">
+                        <span class="checkmark-rdb"></span>
+                    </label>
+                </div>
+
+                <div class="col-lg-3 col-sm-4 col-xs-6 mar-b-10">
+                    <label class="wrap-custom-box fw-light"> Only reviews <span class="fw-bold color-pink">without picture</span>
+                        <input name="radio" type="radio">
+                        <span class="checkmark-rdb"></span>
+                    </label>
+                </div>
+
+                <div class="col-lg-3 col-sm-4 col-xs-6 mar-b-10">
+                    <label class="wrap-custom-box fw-light"> Get <span class="fw-bold color-pink">all reviews</span>
+                        <input name="radio" type="radio">
+                        <span class="checkmark-rdb"></span>
+                    </label>
+                </div>
+            </div>
+
+            <h4 class="color-dark-blue fz15 fw-bold mar-b-25">Reviews with images</h4>
+            <p class="mar-b-30">English using default translate from AliExpress</p>
+
+            <div class="row mar-b-60">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-lg-5 col-sm-12">
+                            <h4 class="color-dark-blue fz15 fw-bold mar-b-25">Max number of reviews per import</h4>
+                            <div class="form-group mar-b-40">
+                                <input type="text" class="form-control" value="200">
+                            </div>
+
+                            <h4 class="color-dark-blue fz15 fw-bold mar-b-25">Language review options</h4>
+                            <div class="form-group mar-b-40">
+                                <select name="" class="form-control select2">
+                                    <option value="">All selected (249)</option>
+                                    <option value="">English</option>
+                                    <option value="">Viet Nam</option>
+                                    <option value="">Italy</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 col-sm-12">
+                            <h4 class="color-dark-blue fz15 fw-bold mar-b-25">Fliter review with keywords</h4>
+                            <input type="text" class="tagsinput form-control" value="#keyword_1,#keyword_2,#keyword_3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mar-b-60">
+                <button class="btn btn-primary fw-bold mar-r-15">Save Settings</button>
+                <button class="btn btn-default btn-hvr-pink">Reset To Default</button>
+            </div>
         </div>
     </div>
     <!-- END: CONTENT WRAPPER -->
@@ -435,8 +533,23 @@
     <script src="sources/bootstrap-3/js/bootstrap.min.js"></script>
     <script src="sources/animate/wow.min.js"></script>
 
-	<!-- ============================= SCRIPT PAGE ============================= -->
-	<!-- =========================== END: SCRIPT PAGE ========================== -->
+	<!-- SCRIPT PAGE -->
+
+    <!-- select2 -->
+    <script src="sources/select2/select2.min.js"></script>
+
+    <!-- tagsinput -->
+    <script src="sources/tagsinput/jquery.tagsinput.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select2').select2();
+            $('.tagsinput').tagsInput({
+                defaultText: 'keywords'
+            });
+        });
+    </script>
+	<!-- /SCRIPT PAGE -->
 
     <script type="text/javascript" src="js/scripts.js"></script>
 	
@@ -477,7 +590,5 @@
         });
     </script>
     <!-- /ADD ALT - SEO -->
-
-    <div class="blind-wall-menu"></div>
 </body>
 </html>

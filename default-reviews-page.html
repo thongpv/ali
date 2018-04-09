@@ -70,7 +70,7 @@
     
     <link rel="stylesheet" href="css/app.bootstrap.css">
     <link rel="stylesheet" href="sources/animate/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
 
     <!-- font-ali-awesome -->
     <link rel="stylesheet" href="sources/font-ali-awesome/font-ali-awesome.css">
@@ -384,11 +384,10 @@
                     <div id="treeview_1" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ul>
-                                <li><a href="dashboard-manage-reviews-page.html" class="ico-hourglass">Dashboard</a></li>
                                 <li><a href="#" class="ico-hourglass">Pending Reviews</a></li>
-                                <li><a href="approve-reviews-page.html" class="ico-approve-review">Approve Reviews</a></li>
-                                <li><a href="create-reviews-page.html" class="ico-create-review">Create Review Page</a></li>
-                                <li><a href="default-reviews-page.html" class="ico-default-review">Default Reviews</a></li>
+                                <li><a href="#" class="ico-approve-review">Approve Reviews</a></li>
+                                <li><a href="#" class="ico-create-review">Create Review Page</a></li>
+                                <li><a href="#" class="ico-default-review">Default Reviews</a></li>
                             </ul>
                         </div>
                     </div>
@@ -399,7 +398,6 @@
                     <div id="treeview_2" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ul>
-                                <li><a href="dashboard-general-setting-page.html" class="ico-input-form">Dashboard</a></li>
                                 <li><a href="#" class="ico-input-form">Input Form Edit</a></li>
                                 <li class="active"><a href="#" class="ico-comment-form">Comment Form Edit</a></li>
                             </ul>
@@ -409,11 +407,9 @@
 
                 <li class="header">MAIN NAVIGATION</li>
                 <li><a href="#" class="ico-app-intergration">Apps Intergration</a></li>
-                <li><a href="getting-started.html" class="ico-get-star">Get starts</a></li>
+                <li><a href="#" class="ico-get-star">Get starts</a></li>
                 <li class="divide"></li>
-                <li><a href="upgrade-version-page.html" class="ico-upgrade-version">Upgrade version</a></li>
-                <li class="header">PAGE ORDER</li>
-                <li><a href="welcome-page.html" class="ico-app-intergration">Welcome</a></li>
+                <li><a href="#" class="ico-upgrade-version">Upgrade version</a></li>
             </ul>
         </div>
     </aside>
@@ -422,8 +418,117 @@
     <!-- CONTENT WRAPPER -->
     <div class="wrapper-content">
         <div class="clearfix"></div>
-        <div class="wrapper-space">
-                hello
+        <div class="wrapper-space wrapper-space--45 bg-white">
+
+            <h2 class="ali-title-normal color-dark-blue mar-t-0 mar-b-15">Default Reviews Page</h2>
+            <p class="ali-body-medium mar-b-30">Add default reviews to your no-review products. You can manually or randomly choose which reviews to be shown.</p>
+            
+            <div class="mar-b-25">
+                <h3 class="ali-title-regular color-dark-blue fw-bold mar-0 pull-left">1.1 Manage preloaded reviews</h3>
+                <b class="fz15 color-grey-400 pull-right">Total: <span class="color-pink">10</span> reviews</b>
+                <div class="clearfix"></div>    
+            </div>
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table table-hover table-ali-custom table-mid mar-b-30" id="table-select-all">
+                    <thead>
+                        <tr>
+                            <th width="25%">Reviewer Name</th>
+                            <th width="10%">Country</th>
+                            <th width="">Rating</th>
+                            <th width="">Feedback</th>
+                            <th width="20%">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="#" class="color-dark-blue fz15 fw-bold">Reviewers 1</a>
+                            </td>
+                            <td>
+                                <div class="media">
+                                    <div class="media-left_location p-relative">
+                                        <img src="http://via.placeholder.com/20x13" alt="Domain.com" class="mar-r-10">
+                                        <span class="fz13">VN</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="td-rating"><span style="cursor: default;"><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0%;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div></span><input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star icon-ic-star-24px" data-empty="ali-rating ali-rating--star icon-ic-star-border-24px" data-fractions="2" value=""></td>
+                            <td>
+                                <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum culpa error cumque soluta, qui.</p>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary fw-bold mar-b-5">Edit Preview</button>
+                                <button class="btn btn-default btn-hvr-pink mar-b-5">
+                                    <span class="icon-ic-delete-forever-24px"></span>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#" class="color-dark-blue fz15 fw-bold">Reviewers 1</a>
+                            </td>
+                            <td>
+                                <div class="media">
+                                    <div class="media-left_location p-relative">
+                                        <img src="http://via.placeholder.com/20x13" alt="Domain.com" class="mar-r-10">
+                                        <span class="fz13">VN</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="td-rating"><span style="cursor: default;"><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0%;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div></span><input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star icon-ic-star-24px" data-empty="ali-rating ali-rating--star icon-ic-star-border-24px" data-fractions="2" value=""></td>
+                            <td>
+                                <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum culpa error cumque soluta, qui.</p>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary fw-bold mar-b-5">Edit Preview</button>
+                                <button class="btn btn-default btn-hvr-pink mar-b-5">
+                                    <span class="icon-ic-delete-forever-24px"></span>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#" class="color-dark-blue fz15 fw-bold">Reviewers 1</a>
+                            </td>
+                            <td>
+                                <div class="media">
+                                    <div class="media-left_location p-relative">
+                                        <img src="http://via.placeholder.com/20x13" alt="Domain.com" class="mar-r-10">
+                                        <span class="fz13">VN</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="td-rating"><span style="cursor: default;"><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0%;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div><div class="rating-symbol" style="display: inline-block; position: relative;" data-original-title="" title=""><div class="rating-symbol-background ali-rating ali-rating--star icon-ic-star-border-24px" style="visibility: visible;"></div><div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;"><span class="ali-rating ali-rating--star icon-ic-star-24px"></span></div></div></span><input type="hidden" class="rating-tooltip-manual" data-filled="ali-rating ali-rating--star icon-ic-star-24px" data-empty="ali-rating ali-rating--star icon-ic-star-border-24px" data-fractions="2" value=""></td>
+                            <td>
+                                <p class="fz11 text-over-3 mr0 table-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum culpa error cumque soluta, qui.</p>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary fw-bold mar-b-5">Edit Preview</button>
+                                <button class="btn btn-default btn-hvr-pink mar-b-5">
+                                    <span class="icon-ic-delete-forever-24px"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- END: Table -->
+            
+            <div class="mar-b-60">
+                <button class="btn btn-primary">+ Add More Preview</button>
+            </div>
+
+            <h3 class="ali-title-regular color-dark-blue fw-bold mar-t-0 mar-b-10">1.1 Manage preloaded reviews</h3>
+            <p class="ali-body-medium mar-b-30">Import default reviews random to all products when product empty reviews</p>
+
+            <div class="mar-b-15">
+                <button class="btn btn-primary fw-bold mar-r-10">Import Previews</button>
+                <button class="btn btn-default btn-hvr-pink fw-bold">Delete Imported</button>
+            </div>
         </div>
     </div>
     <!-- END: CONTENT WRAPPER -->
@@ -435,8 +540,8 @@
     <script src="sources/bootstrap-3/js/bootstrap.min.js"></script>
     <script src="sources/animate/wow.min.js"></script>
 
-	<!-- ============================= SCRIPT PAGE ============================= -->
-	<!-- =========================== END: SCRIPT PAGE ========================== -->
+	<!-- SCRIPT PAGE -->
+	<!-- /SCRIPT PAGE -->
 
     <script type="text/javascript" src="js/scripts.js"></script>
 	

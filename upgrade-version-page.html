@@ -70,7 +70,6 @@
     
     <link rel="stylesheet" href="css/app.bootstrap.css">
     <link rel="stylesheet" href="sources/animate/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
     <!-- font-ali-awesome -->
     <link rel="stylesheet" href="sources/font-ali-awesome/font-ali-awesome.css">
@@ -411,9 +410,7 @@
                 <li><a href="#" class="ico-app-intergration">Apps Intergration</a></li>
                 <li><a href="getting-started.html" class="ico-get-star">Get starts</a></li>
                 <li class="divide"></li>
-                <li><a href="upgrade-version-page.html" class="ico-upgrade-version">Upgrade version</a></li>
-                <li class="header">PAGE ORDER</li>
-                <li><a href="welcome-page.html" class="ico-app-intergration">Welcome</a></li>
+                <li><a href="#" class="ico-upgrade-version">Upgrade version</a></li>
             </ul>
         </div>
     </aside>
@@ -422,8 +419,82 @@
     <!-- CONTENT WRAPPER -->
     <div class="wrapper-content">
         <div class="clearfix"></div>
-        <div class="wrapper-space">
-                hello
+        <div class="wrapper-space wrapper-space--45 bg-white">
+            <h2 class="mar-t-0 fz25 fw-bold color-dark-blue mar-b-15">Upgrade Your App with a Unlimited Plan</h2>
+            <p class="fz15 color-dark-blue mar-b-50">7 Day Money Back Guarantee on Upgrade Unlimited Plans. By clicking this button, you agree with our <b>“Terms & Policies”</b></p>
+        
+            <div class="row mar-b-25">
+                <div class="col-md-4 col-sm-6">
+                    <div class="wrapper-price selected">
+                        <img src="images/prices/price-basic.png" alt="Domain.com">
+                        <div class="wrapper-price__content">
+                            <ul class="list-unstyled text-center fz15 color-dark-blue">
+                                <li>Write review manually</li>
+                                <li>Display review properties</li>
+                                <li>Verified reviews icon</li>
+                                <li>Manage reviews</li>
+                            </ul>
+
+                            <div class="text-center" style="margin-top: 50px;">
+                                <a href="#" class="btn btn-primary fw-bold">YOU ARE HERE</a>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="#" class="btn btn-link btn-link--primary mar-t-10">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="wrapper-price">
+                        <img src="images/prices/price-pro.png" alt="Domain.com">
+                        <div class="wrapper-price__content">
+                            <ul class="list-unstyled text-center fz15 color-dark-blue">
+                                <li>Write review manually</li>
+                                <li>Display review properties</li>
+                                <li>Verified reviews icon</li>
+                                <li>Manage reviews</li>
+                                <li>Remove branded logo</li>
+                                <li>Create review showcase page</li>
+                            </ul>
+
+                            <div class="text-center" style="margin-top: 50px;">
+                                <a href="#" class="btn btn-primary fw-bold">FREE TRIAL</a>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="#" class="btn btn-link btn-link--primary mar-t-10">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="wrapper-price">
+                        <img src="images/prices/price-unlimited.png" alt="Domain.com">
+                        <div class="wrapper-price__content">
+                            <ul class="list-unstyled text-center fz15 color-dark-blue">
+                                <li>Write review manually</li>
+                                <li>Display review properties</li>
+                                <li>Verified reviews icon</li>
+                                <li>Manage reviews</li>
+                                <li>Remove branded logo</li>
+                                <li>Create review showcase page</li>
+                                <li>Do everything you want!</li>
+                            </ul>
+
+                            <div class="text-center" style="margin-top: 50px;">
+                                <a href="#" class="btn btn-primary fw-bold">FREE TRIAL</a>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="#" class="btn btn-link btn-link--primary mar-t-10">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- END: CONTENT WRAPPER -->
@@ -436,6 +507,19 @@
     <script src="sources/animate/wow.min.js"></script>
 
 	<!-- ============================= SCRIPT PAGE ============================= -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var heights = $(".wrapper-price__content ul").map(function ()
+            {
+                return $(this).height();
+            }).get();
+
+            var maxHeight = Math.max.apply(null, heights);
+            console.log(maxHeight);
+
+            $(".wrapper-price__content ul").css('min-height', maxHeight);
+        }); 
+    </script>
 	<!-- =========================== END: SCRIPT PAGE ========================== -->
 
     <script type="text/javascript" src="js/scripts.js"></script>
