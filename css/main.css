@@ -279,7 +279,7 @@ header.main-header ul.dropdown-menu {
   padding: 25px;
   width: 460px;
   position: absolute;
-  top: 90%;
+  top: 95%;
   right: 0;
   left: auto;
   border-radius: 4px;
@@ -332,12 +332,28 @@ aside.main-sidebar ul {
   padding: 0;
 }
 
+aside.main-sidebar ul a[data-toggle="collapse"]:after {
+  content: "\ea16";
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 8px;
+  color: #b8c7ce;
+  transform: translateY(-50%);
+  transform-origin: 25% 25%;
+  font-family: 'icomoon' !important;
+  -webkit-transition: 0.15s ease-in-out, width 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out, width 0.15s ease-in-out;
+  transition: 0.15s ease-in-out, width 0.15s ease-in-out;
+}
+
 aside.main-sidebar ul a {
   color: #fff;
   display: inline-block;
   width: 100%;
   padding: 20px 10px;
   padding-left: 50px;
+  padding-right: 30px;
   text-decoration: none;
   border-left: solid 3px transparent;
   position: relative;
@@ -348,6 +364,10 @@ aside.main-sidebar ul a {
 
 aside.main-sidebar ul a:hover {
   color: #F63663;
+}
+
+aside.main-sidebar ul a:hover[data-toggle="collapse"]:after {
+  color: #fff;
 }
 
 aside.main-sidebar ul a:before {
@@ -362,6 +382,14 @@ aside.main-sidebar ul a:before {
 aside.main-sidebar ul a[aria-expanded=true] {
   border-left: solid 3px #fff;
   background-color: #F63665;
+}
+
+aside.main-sidebar ul a[aria-expanded=true][data-toggle="collapse"]:after {
+  color: #fff;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 aside.main-sidebar ul a.ico-approve-review:before {
@@ -417,6 +445,11 @@ aside.main-sidebar ul .panel-collapse {
   border-bottom: solid 1px #131313;
 }
 
+aside.main-sidebar ul .panel-collapse .panel-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 aside.main-sidebar ul.sidebar-menu > li > a {
   color: #fff;
 }
@@ -459,43 +492,7 @@ aside.main-sidebar li.header {
 }
 
 /* RESPONSIVE - Page layout styles mobile */
-@media only screen and (max-width: 1200px) {
-  .text-align-lg-r {
-    text-align: right !important;
-  }
-  .text-align-lg-l {
-    text-align: left !important;
-  }
-  .text-align-lg-c {
-    text-align: center !important;
-  }
-  .text-align-lg- {
-    text-align: inherit !important;
-  }
-  .hidden-lg-down {
-    display: none !important;
-  }
-}
-
 @media only screen and (max-width: 992px) {
-  .text-align-md-r {
-    text-align: right !important;
-  }
-  .text-align-md-l {
-    text-align: left !important;
-  }
-  .text-align-md-c {
-    text-align: center !important;
-  }
-  .text-align-md- {
-    text-align: inherit !important;
-  }
-  .hidden-md-down {
-    display: none !important;
-  }
-  .table-responsive {
-    overflow-x: auto !important;
-  }
   .main-header {
     max-height: 140px !important;
   }
@@ -528,21 +525,6 @@ aside.main-sidebar li.header {
 }
 
 @media only screen and (max-width: 768px) {
-  .text-align-sm-r {
-    text-align: right !important;
-  }
-  .text-align-sm-l {
-    text-align: left !important;
-  }
-  .text-align-sm-c {
-    text-align: center !important;
-  }
-  .text-align-sm- {
-    text-align: inherit !important;
-  }
-  .hidden-sm-down {
-    display: none !important;
-  }
   .nav {
     margin: initial;
   }
@@ -566,51 +548,5 @@ aside.main-sidebar li.header {
   }
   header.main-header .navbar-custom-menu ul.nav li ul.dropdown-menu:before, header.main-header .navbar-custom-menu ul.nav li ul.dropdown-menu:after {
     content: none;
-  }
-}
-
-@media only screen and (max-width: 544px) {
-  .text-align-xs-r {
-    text-align: right !important;
-  }
-  .text-align-xs-l {
-    text-align: left !important;
-  }
-  .text-align-xs-c {
-    text-align: center !important;
-  }
-  .text-align-xs- {
-    text-align: inherit !important;
-  }
-  .hidden-xs-down {
-    display: none !important;
-  }
-  .media--point .media-body--write-new button {
-    position: static;
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (min-width: 544px) {
-  .hidden-xs-up {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .hidden-sm-up {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .hidden-md-up {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .hidden-lg-up {
-    display: none !important;
   }
 }

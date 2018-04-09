@@ -75,6 +75,18 @@
 	}
 }
 
+.btn-link--primary {
+	color: $blue;
+	
+	&:hover {
+		color: $purple;
+	}
+
+	&:focus {
+		color: $purple;
+	}
+}
+
 .ali-icon-down {
 	position: relative;
 
@@ -88,3 +100,4 @@
 		transform: translate(-50%, -50%);
 	}
 }
+

@@ -2,13 +2,13 @@
 	+ div {
 		width: 100% !important;
 		border: solid 1px $border-solid-color !important;
-		@include border-radius(4px);
+		@include border-radius($border-radius-input);
 
 		span.tag {
 			color: #fff !important;
 			background-color: $purple !important;
 			border-color: $purple !important;
-			border-radius: 4px !important;
+			border-radius: 2px !important;
 
 			a {
 				color: #fff !important;

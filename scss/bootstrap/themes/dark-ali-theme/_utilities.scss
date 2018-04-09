@@ -8,11 +8,13 @@
 
 // display
 .d-inline-block {display: inline-block !important;}
+.d-block {display: block !important;}
 
 // font-size
 .fz11 {font-size: 11px;}
 .fz13 {font-size: 13px;}
 .fz14 {font-size: 14px;}
+.fz15 {font-size: 15px;}
 .fz18 {font-size: 18px;}
 
 // font-weight
@@ -28,6 +30,11 @@
 .mar-r-15 {margin-right: 15px !important;}
 .mar-0, .mr0 {margin: 0 !important;}
 
+.pad-0 {padding: 0px !important;}
+.pad-5 {padding: 5px !important;}
+.pad-20 {padding: 20px !important;}
+.pad-r-0 {padding-right: 0px !important;}
+.pad-r-5 {padding-right: 5px !important;}
 .pad-r-10 {padding-right: 10px !important;}
 .pad-l-0 {padding-left: 0px !important;}
 .pad-l-3 {padding-left: 3px !important;}
@@ -45,7 +52,16 @@
 .h-100 {height: 100% !important}
 
 .color-pink {color:$light-red;}
+.color-grey {color:$grey-color;}
 .color-pink-hrv {color:$light-red-hvr;}
+.color-dark-blue{color:$dark-blue-color;}
 
 .text-over-1 {-webkit-line-clamp: 1;@include my-text-overflow()};
 .text-over-3 {-webkit-line-clamp: 3;@include my-text-overflow()};
+
+// background
+.bg-white {background-color: $bg-white !important;}
+
+// text-decoration
+.undecoration {text-decoration: none !important;}
+

@@ -141,5 +141,11 @@
 				}
 			}
 		}
+
+		&--right {
+			left: 100%;
+			top: 0;
+			transform: translate(5%, 0%);
+		}
 	}
 }

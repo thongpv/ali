@@ -1,6 +1,7 @@
 .media {
 	.badge-verify {
 		margin-left: 18px;	
+		color: #4AD991;
 	}
 
 	.media-left {
@@ -40,6 +41,27 @@
 				vertical-align: initial; 
 			}
 		}
+
+		.media_like {
+			b {
+				display: inline-block;
+				cursor: pointer;
+
+				[class^="icon"] {
+					font-size: 16px;
+					margin-left: 3px;
+					color: #A4AFB7;
+				    vertical-align: text-bottom;
+
+				    
+				}
+
+				&.active [class^="icon"] {
+			    	color: #FFB303;
+			    }
+			}
+			
+		}
 	}
 
 	&--panel {
@@ -50,6 +72,7 @@
 			position: relative;
 			padding: 15px;
 			box-shadow: 0px 0px 10px 1px #e2e2e2;
+			background-color: #fff;
 			@include border-radius(5px);
 
 			&:after, &:before {
@@ -58,15 +81,15 @@
 				top: 15px;
 				display: inline-block;
 				content: "";
-				border-top: 5px solid transparent;
+				border-top: 8px solid transparent;
 				border-right: 10px solid #c5c5c5;
-				border-bottom: 5px solid transparent;
+				border-bottom: 8px solid transparent;
 			}
 
 			&:after {
-				border-top: 6px solid transparent;
+				border-top: 9px solid transparent;
 				border-right: 12px solid #ffffff;
-				border-bottom: 6px solid transparent;
+				border-bottom: 10px solid transparent;
 				left: -9px;
 				top: 14px;
 			}
@@ -83,10 +106,7 @@
 		.media-body {
 		    vertical-align: middle;
 
-		    .badge-verify img {
-		    	
-		    }
-
+			&--icon,
 			&--write-new {
 				position: relative;
 
@@ -96,6 +116,18 @@
 					top: 50%;
 					bottom: 50%;
 					transform: translate(0,-50%);	
+				}
+			}
+
+			&--write-new {
+				h4, p {
+					padding-right: 125px;
+				}
+			}
+
+			&--icon {
+				h4, p {
+					padding-right: 30px;
 				}
 			}
 		}

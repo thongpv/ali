@@ -58,10 +58,12 @@
 
 		.owl-prev {
 			float: left;
+			border-radius: 0px 4px 4px 0px;
 		}	
 
 		.owl-next {
 			float: right;
+			border-radius: 4px 0px 0px 4px;
 		}
 	}
 }
